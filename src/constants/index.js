@@ -136,14 +136,6 @@ export const navLinks = [
     id: "projects",
     title: "Projects",
   },
-  // {
-  //   id: "openSource",
-  //   title: "Open Source",
-  // },
-  // {
-  //   id: "extraCurricular",
-  //   title: "Extra Curricular",
-  // },
   {
     id: "contactMe",
     title: "Contact Me",
@@ -241,31 +233,6 @@ export const skills = [
   {
     title: "Programming Languages",
     items: [
-      // {
-      //   id: "pl-1",
-      //   icon: DiRuby,
-      //   name: "Ruby",
-      // },
-      // {
-      //   id: "pl-2",
-      //   icon: SiPython,
-      //   name: "Python",
-      // },
-      // {
-      //   id: "pl-3",
-      //   icon: SiCplusplus,
-      //   name: "C++",
-      // },
-      // {
-      //   id: "pl-4",
-      //   icon: FaGolang,
-      //   name: "Go",
-      // },
-      // {
-      //   id: "pl-5",
-      //   icon: FaRust,
-      //   name: "Rust",
-      // },
       {
         id: "pl-7",
         icon: SiC,
@@ -296,26 +263,11 @@ export const skills = [
         icon: SiTypescript,
         name: "TypeScript",
       }
-      // {
-      //   id: "pl-11",
-      //   icon: SiSolidity,
-      //   name: "Solidity",
-      // }
     ],
   },
   {
     title: "Frameworks/Libraries",
     items: [
-      // {
-      //   id: "f-1",
-      //   icon: SiDjango,
-      //   name: "Django",
-      // },
-      // {
-      //   id: "f-2",
-      //   icon: SiRubyonrails,
-      //   name: "Ruby on Rails",
-      // },
       {
         id: "f-6",
         icon: SiTailwindcss,
@@ -366,16 +318,6 @@ export const skills = [
         icon: SiMysql,
         name: "MySQL",
       },
-      {
-        id: "f-8",
-        icon: SiFirebase,
-        name: "Firebase",
-      },
-      // {
-      //   id: "f-9",
-      //   icon: SiDotnet,
-      //   name: ".NET",
-      // },
     ],
   },
   {
@@ -431,11 +373,6 @@ export const skills = [
         icon: SiVisualstudiocode,
         name: "VS Code",
       },
-      // {
-      //   id: "t-14",
-      //   icon: SiApache,
-      //   name: "Apache",
-      // },
     ],
   },
 ];

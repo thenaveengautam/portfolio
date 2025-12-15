@@ -269,37 +269,37 @@ export const skills = [
     title: "Frameworks/Libraries",
     items: [
       {
-        id: "f-6",
+        id: "f-1",
         icon: SiTailwindcss,
         name: "Tailwind CSS",
       },
       {
-        id: "f-3",
+        id: "f-2",
         icon: SiNodedotjs,
         name: "Node.js",
       },
       {
-        id: "f-4",
+        id: "f-3",
         icon: SiExpress,
         name: "Express.js",
       },
       {
-        id: "f-5",
+        id: "f-4",
         icon: SiReact,
         name: "React",
       },
       {
-        id: "t-9",
+        id: "t-5",
         icon: SiVite,
         name: "Vite",
       },
       {
-        id: "f-7",
+        id: "f-6",
         icon: SiReactrouter,
         name: "React Router",
       },
       {
-        id: "f-8",
+        id: "f-7",
         icon: SiRedux,
         name: "Redux",
       },
@@ -309,12 +309,12 @@ export const skills = [
         name: "Next.js",
       },
       {
-        id: "t-0",
+        id: "f-9",
         icon: SiMongodb,
         name: "MongoDB",
       },
       {
-        id: "t-2",
+        id: "f-10",
         icon: SiMysql,
         name: "MySQL",
       },

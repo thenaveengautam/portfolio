@@ -341,7 +341,7 @@ export const skills = [
       {
         id: "t-6",
         icon: SiDigitalocean,
-        name: "Digital Ocean",
+        name: "DigitalOcean",
       },
       {
         id: "t-7",

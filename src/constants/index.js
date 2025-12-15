@@ -308,68 +308,68 @@ export const skills = [
         icon: SiNextdotjs,
         name: "Next.js",
       },
-      {
-        id: "f-9",
-        icon: SiMongodb,
-        name: "MongoDB",
-      },
-      {
-        id: "f-10",
-        icon: SiMysql,
-        name: "MySQL",
-      },
     ],
   },
   {
     title: "Tools/Platforms",
     items: [
       {
+        id: "t-1",
+        icon: SiMongodb,
+        name: "MongoDB",
+      },
+      {
+        id: "t-2",
+        icon: SiMysql,
+        name: "MySQL",
+      },
+      {
         id: "t-3",
         icon: SiPostman,
         name: "Postman",
       },
       {
-        id: "t-8",
+        id: "t-4",
         icon: SiNetlify,
         name: "Netlify",
       },
       {
-        id: "t-10",
+        id: "t-5",
         icon: SiVercel,
         name: "Vercel",
       },
       {
-        id: "t-12",
+        id: "t-6",
         icon: SiDigitalocean,
         name: "Digital Ocean",
       },
       {
-        id: "t-1",
+        id: "t-7",
         icon: SiAmazonaws,
         name: "AWS",
       },
       {
-        id: "t-13",
+        id: "t-8",
         icon: SiNginx,
         name: "Nginx",
       },
       {
-        id: "t-7",
+        id: "t-9",
         icon: SiDocker,
         name: "Docker",
       },
       {
-        id: "t-5",
+        id: "t-10",
         icon: SiGit,
         name: "Git",
       },
       {
-        id: "t-6",
+        id: "t-11",
         icon: AiFillGithub,
         name: "GitHub",
       },
       {
-        id: "t-4",
+        id: "t-12",
         icon: SiVisualstudiocode,
         name: "VS Code",
       },

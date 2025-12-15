@@ -274,6 +274,16 @@ export const skills = [
         name: "Tailwind CSS",
       },
       {
+        id: "f-3",
+        icon: SiNodedotjs,
+        name: "Node.js",
+      },
+      {
+        id: "f-4",
+        icon: SiExpress,
+        name: "Express.js",
+      },
+      {
         id: "f-5",
         icon: SiReact,
         name: "React",
@@ -297,16 +307,6 @@ export const skills = [
         id: "f-8",
         icon: SiNextdotjs,
         name: "Next.js",
-      },
-      {
-        id: "f-3",
-        icon: SiNodedotjs,
-        name: "Node.js",
-      },
-      {
-        id: "f-4",
-        icon: SiExpress,
-        name: "Express.js",
       },
       {
         id: "t-0",

@@ -97,6 +97,7 @@ import {
   SiRedux,
   SiHtml5,
   SiCss3,
+  SiRender,
 } from "react-icons/si";
 
 import {
@@ -340,36 +341,41 @@ export const skills = [
       },
       {
         id: "t-6",
+        icon: SiRender,
+        name: "Render",
+      },
+      {
+        id: "t-7",
         icon: SiDigitalocean,
         name: "DigitalOcean",
       },
       {
-        id: "t-7",
+        id: "t-8",
         icon: SiAmazonaws,
         name: "AWS",
       },
       {
-        id: "t-8",
+        id: "t-9",
         icon: SiNginx,
         name: "Nginx",
       },
       {
-        id: "t-9",
+        id: "t-10",
         icon: SiDocker,
         name: "Docker",
       },
       {
-        id: "t-10",
+        id: "t-11",
         icon: SiGit,
         name: "Git",
       },
       {
-        id: "t-11",
+        id: "t-12",
         icon: AiFillGithub,
         name: "GitHub",
       },
       {
-        id: "t-12",
+        id: "t-13",
         icon: SiVisualstudiocode,
         name: "VS Code",
       },

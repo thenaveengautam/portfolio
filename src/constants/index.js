@@ -115,8 +115,8 @@ import {
 
 import { DiCss3, DiJava, DiMsqlServer, DiRuby } from "react-icons/di";
 
-export const resumeLink = "https://drive.google.com/file/d/1x-47NIenUtVOn7r3C4WJK8F2xwuXaS62/view?usp=drive_link";
-export const repoLink = "https://github.com/thenaveengautam/personal-portfolio";
+export const resumeLink = "https://drive.google.com/file/d/1NlqwetjUgmO7bR6aA5dfLRMFKcdcWGO0/view?usp=drive_link";
+export const repoLink = "";
 
 export const callToAction = "https://www.linkedin.com/in/thenaveengautam/";
 

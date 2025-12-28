@@ -84,7 +84,7 @@ Three main things have to be changed to customize it your way (please open an is
 
 ### Deployment
 
-You can use [Netlify](https://docs.netlify.com/) to deploy your site. Follow the instructions in their docs to do so.
+You can use [Vercel](https://docs.vercel.com/) to deploy your site. Follow the instructions in their docs to do so.
 
 Since we have env variables, make sure to add them from the Netlify UI as well. [Link to Guide](https://docs.netlify.com/environment-variables/get-started/#site-environment-variables)
 
@@ -146,3 +146,8 @@ our community aspires to be a respectful place both during online and in-person 
 
 - [Coding Lottie](https://lottiefiles.com/90189-coding) by Yamesh Sai Balaji
 - [Quiz Mode Lottie](https://lottiefiles.com/92377-quiz-mode) by SenecaDan
+
+##
+This project is open-source and free to use.
+
+⭐ Don’t forget to star the repository if you like it!

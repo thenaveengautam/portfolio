@@ -200,7 +200,7 @@ export const achievements = [
   {
     id: "a-3",
     icon: webdev,
-    event: "HTML, CSS, and Javascript for Web Developers",
+    event: "HTML, CSS, and JavaScript for Web Developers",
     position: "Johns Hopkins University",
     content1: "HTML, CSS & JavaScript fundamentals",
     content2: "Responsive layouts & mobile-first design",

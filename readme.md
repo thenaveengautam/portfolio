@@ -1,8 +1,8 @@
 <h1 align="center"> Personal Portfolio </h1>
 
-<img width="945" alt="image" src="https://user-images.githubusercontent.com/76661350/193249886-79f3d04a-47c0-4b4b-93a6-23c32cf762f1.png">
+<img width="953" height="438" alt="{D2692B06-5676-4B07-90C0-284369F8C93E}" src="https://github.com/user-attachments/assets/f3cf1f24-3191-434c-b934-a786f921da79" />
 
-### Deployed link: https://parthmittal.netlify.app/
+### Deployed link: https://naveen-gautam.vercel.app/
 
 ## Table of Contents 📁
 
@@ -84,7 +84,7 @@ Three main things have to be changed to customize it your way (please open an is
 
 ### Deployment
 
-You can use [Netlify](https://docs.netlify.com/) to deploy your site. Follow the instructions in their docs to do so.
+You can use [Vercel](https://docs.vercel.com/) to deploy your site. Follow the instructions in their docs to do so.
 
 Since we have env variables, make sure to add them from the Netlify UI as well. [Link to Guide](https://docs.netlify.com/environment-variables/get-started/#site-environment-variables)
 
@@ -146,3 +146,8 @@ our community aspires to be a respectful place both during online and in-person 
 
 - [Coding Lottie](https://lottiefiles.com/90189-coding) by Yamesh Sai Balaji
 - [Quiz Mode Lottie](https://lottiefiles.com/92377-quiz-mode) by SenecaDan
+
+##
+This project is open-source and free to use.
+
+⭐ Don’t forget to star the repository if you like it!

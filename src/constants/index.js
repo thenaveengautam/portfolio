@@ -568,7 +568,7 @@ export const projects = [
     id: "project-3",
     title: "ResumeAnalyzer AI",
     github: "https://github.com/thenaveengautam/ResumeAnalyzer-AI",
-    link: "https://resume-analyzer-ai-psi.vercel.app",
+    link: "https://resumeanalyzersai.vercel.app",
     image: resumeanaly,
     content:
       "Smart AI tool to analyze and improve your resume.",

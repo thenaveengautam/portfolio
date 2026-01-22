@@ -2,7 +2,7 @@
 
 <img width="953" height="438" alt="{D2692B06-5676-4B07-90C0-284369F8C93E}" src="https://github.com/user-attachments/assets/f3cf1f24-3191-434c-b934-a786f921da79" />
 
-### Deployed link: https://naveen-gautam.vercel.app/
+### Deployed link: https://naveengautam.dev
 
 ## Table of Contents 📁
 

@@ -496,7 +496,7 @@ export const projects = [
     id: "project-1",
     title: "Chat AI",
     github: "https://github.com/thenaveengautam/chat-ai",
-    link: "https://openchatai",
+    link: "https://openchatai.app",
     image: chatai,
     content:
       "Smart AI chatbot for instant queries, conversations, and productivity support.",

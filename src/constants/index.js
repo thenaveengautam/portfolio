@@ -496,7 +496,7 @@ export const projects = [
     id: "project-1",
     title: "Chat AI",
     github: "https://github.com/thenaveengautam/chat-ai",
-    link: "https://chat-ai-gray-eight.vercel.app/",
+    link: "https://openchatai",
     image: chatai,
     content:
       "Smart AI chatbot for instant queries, conversations, and productivity support.",

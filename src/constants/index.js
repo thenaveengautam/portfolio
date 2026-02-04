@@ -570,32 +570,6 @@ export const projects = [
     ],
   },
   {
-    id: "project-3",
-    title: "JobReady AI",
-    github: "https://github.com/thenaveengautam/JobReady-AI",
-    link: "https://job-ready-ai-self.vercel.app",
-    image: job,
-    content:
-      "AI-powered platform for job readiness and career growth.",
-    stack: [
-      {
-        id: "icon-1",
-        icon: SiReact,
-        name: "React"
-      },
-      {
-        id: "icon-2",
-        icon: SiTailwindcss,
-        name: "TailwindCSS"
-      },
-      {
-        id: "icon-3",
-        icon: SiJavascript,
-        name: "JavaScript"
-      },
-    ],
-  },
-  {
     id: "project-4",
     title: "Zaika",
     github: "https://github.com/thenaveengautam/Zaika",

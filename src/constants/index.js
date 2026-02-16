@@ -582,7 +582,7 @@ export const projects = [
         id: "icon-7",
         icon: SiMongodb,
         name: "MongoDB"
-      }
+      },
       {
         id: "icon-8",
         icon: SiDocker,
@@ -592,9 +592,9 @@ export const projects = [
   },
   {
     id: "project-3",
-    title: "ResumeAnalyzer AI",
+    title: "CVision AI",
     github: "https://github.com/thenaveengautam/ResumeAnalyzer-AI",
-    link: "https://resumeanalyzersai.vercel.app",
+    link: "https://cvision.naveengautam.dev",
     image: resumeanaly,
     content:
       "Smart AI tool to analyze and improve your resume.",

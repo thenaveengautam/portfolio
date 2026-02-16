@@ -41,6 +41,7 @@ import chatai from "./chatai.png";
 import job from "./job.png";
 import resumeanaly from "./resumeanaly.png";
 import collab from "./collab.png";
+import cvforge from "./cvforge.png";
 
 export {
   menu,
@@ -85,5 +86,6 @@ export {
   chatai,
   job,
   resumeanaly,
-  collab
+  collab,
+  cvforge
 };

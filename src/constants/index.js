@@ -36,7 +36,8 @@ import {
   chatai,
   job,
   resumeanaly,
-  collab
+  collab,
+  cvforge,
 } from "../assets";
 
 import {
@@ -540,6 +541,57 @@ export const projects = [
   },
   {
     id: "project-2",
+    title: "AI CVForge",
+    github: "https://github.com/thenaveengautam/AI-CVForge.git",
+    link: "https://cvforge.naveengautam.dev",
+    image: cvforge,
+    content:
+      "Forge job-winning resumes with AI guidance, smart tailoring, and recruiter-ready formatting.",
+    stack: [
+      {
+        id: "icon-1",
+        icon: SiReact,
+        name: "React"
+      },
+      {
+        id: "icon-2",
+        icon: SiJavascript,
+        name: "JavaScript"
+      },
+      {
+        id: "icon-3",
+        icon: SiTailwindcss,
+        name: "TailwindCSS"
+      },
+      {
+        id: "icon-4",
+        icon: SiVite,
+        name: "Vite"
+      },
+      {
+        id: "icon-5",
+        icon: SiNodedotjs,
+        name: "Node.js"
+      },
+      {
+        id: "icon-6",
+        icon: SiExpress,
+        name: "Express.js"
+      },
+      {
+        id: "icon-7",
+        icon: SiMongodb,
+        name: "MongoDB"
+      }
+      {
+        id: "icon-8",
+        icon: SiDocker,
+        name: "Docker"
+      },
+    ],
+  },
+  {
+    id: "project-3",
     title: "ResumeAnalyzer AI",
     github: "https://github.com/thenaveengautam/ResumeAnalyzer-AI",
     link: "https://resumeanalyzersai.vercel.app",

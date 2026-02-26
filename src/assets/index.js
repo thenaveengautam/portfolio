@@ -42,6 +42,7 @@ import job from "./job.png";
 import resumeanaly from "./resumeanaly.png";
 import collab from "./collab.png";
 import cvforge from "./cvforge.png";
+import thumbnailx from "./thumbnailx.png";
 
 export {
   menu,
@@ -87,5 +88,6 @@ export {
   job,
   resumeanaly,
   collab,
-  cvforge
+  cvforge,
+  thumbnailx,
 };

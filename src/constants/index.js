@@ -38,6 +38,7 @@ import {
   resumeanaly,
   collab,
   cvforge,
+  thumbnailx,
 } from "../assets";
 
 import {
@@ -560,31 +561,36 @@ export const projects = [
       },
       {
         id: "icon-3",
+        icon: SiReactrouter,
+        name: "React Router"
+      },
+      {
+        id: "icon-4",
         icon: SiTailwindcss,
         name: "TailwindCSS"
       },
       {
-        id: "icon-4",
+        id: "icon-5",
         icon: SiVite,
         name: "Vite"
       },
       {
-        id: "icon-5",
+        id: "icon-6",
         icon: SiNodedotjs,
         name: "Node.js"
       },
       {
-        id: "icon-6",
+        id: "icon-7",
         icon: SiExpress,
         name: "Express.js"
       },
       {
-        id: "icon-7",
+        id: "icon-8",
         icon: SiMongodb,
         name: "MongoDB"
       },
       {
-        id: "icon-8",
+        id: "icon-9",
         icon: SiDocker,
         name: "Docker"
       },
@@ -592,6 +598,62 @@ export const projects = [
   },
   {
     id: "project-3",
+    title: "ThumbnailX AI",
+    github: "https://github.com/thenaveengautam/ThumbnailX-AI.git",
+    link: "https://thumbnailx.naveengautam.dev",
+    image: thumbnailx,
+    content:
+      "Generate eye-catching thumbnails instantly with AI-powered design and smart styling.",
+    stack: [
+      {
+        id: "icon-1",
+        icon: SiReact,
+        name: "React"
+      },
+      {
+        id: "icon-2",
+        icon: SiTypescript,
+        name: "TypeScript"
+      },
+      {
+        id: "icon-3",
+        icon: SiReactrouter,
+        name: "React Router"
+      },
+      {
+        id: "icon-4",
+        icon: SiTailwindcss,
+        name: "TailwindCSS"
+      },
+      {
+        id: "icon-5",
+        icon: SiVite,
+        name: "Vite"
+      },
+      {
+        id: "icon-6",
+        icon: SiNodedotjs,
+        name: "Node.js"
+      },
+      {
+        id: "icon-7",
+        icon: SiExpress,
+        name: "Express.js"
+      },
+      {
+        id: "icon-8",
+        icon: SiMongodb,
+        name: "MongoDB"
+      },
+      {
+        id: "icon-9",
+        icon: SiDocker,
+        name: "Docker"
+      },
+    ],
+  },
+  {
+    id: "project-4",
     title: "CVision AI",
     github: "https://github.com/thenaveengautam/ResumeAnalyzer-AI",
     link: "https://cvision.naveengautam.dev",
@@ -606,23 +668,33 @@ export const projects = [
       },
       {
         id: "icon-2",
-        icon: SiReactrouter,
-        name: "React Router"
+        icon: SiTypescript,
+        name: "TypeScript"
       },
       {
         id: "icon-3",
-        icon: SiTypescript,
-        name: "TypeScript"
+        icon: SiReactrouter,
+        name: "React Router"
       },
       {
         id: "icon-4",
         icon: SiTailwindcss,
         name: "TailwindCSS"
       },
+      {
+        id: "icon-5",
+        icon: SiVite,
+        name: "Vite"
+      },
+      {
+        id: "icon-6",
+        icon: SiDocker,
+        name: "Docker"
+      },
     ],
   },
   {
-    id: "project-4",
+    id: "project-5",
     title: "Zaika",
     github: "https://github.com/thenaveengautam/Zaika",
     link: "https://thenaveengautam.github.io/Zaika/",
@@ -639,32 +711,6 @@ export const projects = [
         id: "icon-2",
         icon: SiBootstrap,
         name: "Bootstrap"
-      },
-      {
-        id: "icon-3",
-        icon: SiCss3,
-        name: "CSS3"
-      },
-    ],
-  },
-  {
-    id: "project-5",
-    title: "Collaborative Tool",
-    github: "https://github.com/thenaveengautam/collaborative-tool",
-    link: "https://thenaveengautam.github.io/collaborative-tool/",
-    image: collab,
-    content:
-      "Real-time collaboration platform for teams and projects.",
-    stack: [
-      {
-        id: "icon-1",
-        icon: SiNodedotjs,
-        name: "Node.js"
-      },
-      {
-        id: "icon-2",
-        icon: SiJavascript,
-        name: "JavaScript"
       },
       {
         id: "icon-3",

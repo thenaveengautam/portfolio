@@ -201,16 +201,6 @@ export const achievements = [
   },
   {
     id: "a-3",
-    icon: webdev,
-    event: "HTML, CSS, and JavaScript for Web Developers",
-    position: "Johns Hopkins University",
-    content1: "HTML, CSS & JavaScript fundamentals",
-    content2: "Responsive layouts & mobile-first design",
-    content3: "DOM, events & interactive web development",
-    project: "https://coursera.org/verify/PRBK1SBT9VOG",
-  },
-  {
-    id: "a-4",
     icon: full_stack,
     event: "Foundations of Coding Full-Stack",
     position: "Coursera",
@@ -220,7 +210,7 @@ export const achievements = [
     project: "https://coursera.org/verify/1GSRF7W09SKQ",
   },
   {
-    id: "a-5",
+    id: "a-4",
     icon: llm,
     event: "Introduction to Large Language Models",
     position: "Google Cloud",
@@ -228,6 +218,16 @@ export const achievements = [
     content2: "Prompt Engineering & Model Capabilities",
     content3: "Real-world AI & NLP Use Cases",
     project: "https://coursera.org/verify/IJOPLAXM1I81",
+  },
+  {
+    id: "a-5",
+    icon: webdev,
+    event: "HTML, CSS, and JavaScript for Web Developers",
+    position: "Johns Hopkins University",
+    content1: "HTML, CSS & JavaScript fundamentals",
+    content2: "Responsive layouts & mobile-first design",
+    content3: "DOM, events & interactive web development",
+    project: "https://coursera.org/verify/PRBK1SBT9VOG",
   },
 ];
 

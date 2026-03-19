@@ -358,8 +358,8 @@ export const skills = [
       },
       {
         id: "t-5",
-        icon: SiNetlify,
-        name: "Netlify",
+        icon: SiRender,
+        name: "Render",
       },
       {
         id: "t-6",

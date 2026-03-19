@@ -100,6 +100,11 @@ import {
   SiHtml5,
   SiCss3,
   SiRender,
+  SiMicrosoftazure,
+  SiIcons8,
+  SiZapier,
+  SiPhp,
+  SiReddit,
 } from "react-icons/si";
 
 import {
@@ -237,6 +242,11 @@ export const skills = [
     title: "Programming Languages",
     items: [
       {
+        id: "pl-1",
+        icon: SiPython,
+        name: "Python",
+      },
+      {
         id: "pl-7",
         icon: SiC,
         name: "C",
@@ -332,31 +342,6 @@ export const skills = [
         name: "Postman",
       },
       {
-        id: "t-4",
-        icon: SiNetlify,
-        name: "Netlify",
-      },
-      {
-        id: "t-5",
-        icon: SiVercel,
-        name: "Vercel",
-      },
-      {
-        id: "t-6",
-        icon: SiRender,
-        name: "Render",
-      },
-      {
-        id: "t-7",
-        icon: SiDigitalocean,
-        name: "DigitalOcean",
-      },
-      {
-        id: "t-8",
-        icon: SiAmazonaws,
-        name: "AWS",
-      },
-      {
         id: "t-9",
         icon: SiNginx,
         name: "Nginx",
@@ -367,19 +352,49 @@ export const skills = [
         name: "Docker",
       },
       {
+        id: "t-4",
+        icon: SiVercel,
+        name: "Vercel",
+      },
+      {
+        id: "t-5",
+        icon: SiNetlify,
+        name: "Netlify",
+      },
+      {
+        id: "t-6",
+        icon: SiDigitalocean,
+        name: "DigitalOcean",
+      },
+      {
+        id: "t-8",
+        icon: SiAmazonaws,
+        name: "AWS",
+      },
+      {
+        id: "t-10",
+        icon: SiMicrosoftazure,
+        name: "Azure",
+      },
+      {
+        id: "t-9",
+        icon: SiGooglecloud,
+        name: "Google Cloud",
+      },
+      {
         id: "t-11",
-        icon: SiGit,
-        name: "Git",
+        icon: SiOpenai,
+        name: "OpenAI",
+      },
+      {
+        id: "t-7",
+        icon: SiReddit,
+        name: "Reddit",
       },
       {
         id: "t-12",
-        icon: AiFillGithub,
-        name: "GitHub",
-      },
-      {
-        id: "t-13",
-        icon: SiVisualstudiocode,
-        name: "VS Code",
+        icon: SiZapier,
+        name: "Zapier",
       },
     ],
   },

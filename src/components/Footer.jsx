@@ -1,68 +1,79 @@
-import React from "react";
-import Button from "./Button";
-import { socialMedia, aboutMe } from "../constants";
-import { profilePic } from "../assets";
-import { layout } from "../style";
-import { resumeLink, repoLink } from "../constants";
-import { AiFillGithub } from "react-icons/ai";
+"use client";
 
-const Footer = () => (
-  <footer id="contactMe" className="bg-gray-900 sm:px-16 px-6">
-    <div
-      className={`${layout.sectionReverse} xl:max-w-[1280px] w-full mx-auto gap-y-4 `}
-    >
-      <div className={` ${layout.sectionInfo}`}>
-        <h2 className="text-xl font-bold text-gray-800 font-poppins dark:text-white hover:text-gray-700 dark:hover:text-gray-300">
-          {aboutMe.name}
-        </h2>
-        <p
-          className={`font-poppins font-normal text-dimWhite text-[16px] leading-[30.8px] max-w-[470px] mt-5`}
-        >
-        {aboutMe.tagLine}
-        </p>
-        <div className="flex flex-row mt-4">
-          {socialMedia.map((social, index) => (
-            <a
-              href={social.link}
-              target="_blank"
-              key={social.id}
-              index={index}
-              className="text-white mr-5 text-[25px] hover:text-teal-200"
+import React from 'react';
+import { Heart } from 'lucide-react';
+
+const Footer = () => {
+  return (
+    <footer className="bg-[#0a0a0a] border-t border-white/10 pt-12 px-6 pb-7">
+      <div className="mx-auto max-w-7xl">
+        <div className="grid gap-8 mb-8 md:grid-cols-3">
+          {/* Brand */}
+          <div>
+            <button
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              className="text-xl font-semibold text-white transition-opacity duration-300 cursor-pointer textfont-medium ftracking-wider hover:opacity-100"
             >
-              {React.createElement(social.icon)}
-            </a>
-          ))}
+              <span className="text-2xl font-black text-white">Naveen</span>
+              <span className="inline-block w-2 h-2 rounded-full bg-[#c4ff00] ml-1"></span>
+            </button>
+            <p className="pt-2 text-sm leading-relaxed text-gray-400">
+              Crafting smart solutions that matter.<br />Let's create something amazing<br />together.
+            </p>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h4 className="mb-4 font-bold text-white">Quick Links</h4>
+            <ul className="space-y-2">
+              <li>
+                <a href="#about" onClick={(e) => { e.preventDefault(); document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' }); }} className="text-gray-400 hover:text-[#c4ff00] transition-colors duration-300 text-sm cursor-pointer">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#services" onClick={(e) => { e.preventDefault(); document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' }); }} className="text-gray-400 hover:text-[#c4ff00] transition-colors duration-300 text-sm cursor-pointer">
+                  Services
+                </a>
+              </li>
+              <li>
+                <a href="#portfolio" onClick={(e) => { e.preventDefault(); document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' }); }} className="text-gray-400 hover:text-[#c4ff00] transition-colors duration-300 text-sm cursor-pointer">
+                  Portfolio
+                </a>
+              </li>
+              <li>
+                <a href="#contact" onClick={(e) => { e.preventDefault(); document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }); }} className="text-gray-400 hover:text-[#c4ff00] transition-colors duration-300 text-sm cursor-pointer">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Services */}
+          <div>
+            <h4 className="mb-4 font-bold text-white">Services</h4>
+            <ul className="space-y-3">
+              <li className="text-sm text-gray-400 hover:text-[#c4ff00] transition-colors duration-300">Full Stack Web Development</li>
+              <li className="text-sm text-gray-400 hover:text-[#c4ff00] transition-colors duration-300">Smart Website Solutions</li>
+              <li className="text-sm text-gray-400 hover:text-[#c4ff00] transition-colors duration-300">AI-Powered Automation</li>
+              <li className="text-sm text-gray-400 hover:text-[#c4ff00] transition-colors duration-300">REST API Development</li>
+              <li className="text-sm text-gray-400 hover:text-[#c4ff00] transition-colors duration-300">Cloud Deployment</li>
+            </ul>
+          </div>
         </div>
 
-        <div className="grid grid-cols-2">
-          {/* styles is a prop */}
-          <a href={resumeLink} target="_blank">
-            <Button styles="mt-10 mr-3 inline-flex items-center justify-center" text="Resume" icon={AiFillGithub} />
-          </a>
-          {/* <a href={repoLink} target="_blank">
-            <Button
-              styles="mt-10 inline-flex items-center justify-center"
-              text="Star"
-              icon={AiFillGithub}
-            />
-          </a> */}
+        {/* Bottom bar */}
+        <div className="flex flex-col items-center justify-between gap-4 pt-6 border-t border-white/10 md:flex-row">
+          <p className="text-sm text-gray-500">
+            © {new Date().getFullYear()} Naveen. All rights reserved.
+          </p>
+          <p className="flex items-center gap-1 text-sm text-gray-500">
+            Made with<span className="text-lg">💛</span>by Naveen Gautam
+          </p>
         </div>
       </div>
-
-      <div className="md:ml-auto mt-10 md:mt-0">
-        <img
-          src={profilePic}
-          alt="Naveen Gautam"
-          className="w-[200px] h-[200px] border-2 border-teal-200 relative z-[5] rounded-full"
-        />
-      </div>
-    </div>
-    <div className="text-center font-poppins font-normal text-dimWhite text-xs sm:text-sm pb-4">
-      <p>
-        Made with ❤️ by Naveen Gautam
-      </p>
-    </div>
-  </footer>
-);
+    </footer>
+  );
+};
 
 export default Footer;

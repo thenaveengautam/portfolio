@@ -1,97 +1,125 @@
-import { useState, useEffect } from "react";
-import { close, parthmittal, menu } from "../assets";
-import { navLinks } from "../constants";
-import { scrollToSection } from "../lib/helperFunctions";
-import { motion } from "framer-motion";
+"use client";
+
+import React, { useState, useEffect } from 'react';
+import { Menu, X } from 'lucide-react';
+import { mockData } from '../mockData';
 
 const Navbar = () => {
-  const [toggle, setToggle] = useState(false);
-  const [showNavbar, setShowNavbar] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('');
 
   useEffect(() => {
+    // 1. Navbar background state on scroll
+    let ticking = false;
     const handleScroll = () => {
-      if (window.scrollY < lastScrollY) {
-        setShowNavbar(true);
-      } else {
-        setShowNavbar(false);
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          setIsScrolled(window.scrollY > 50);
+          ticking = false;
+        });
+        ticking = true;
       }
-      setLastScrollY(window.scrollY);
     };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [lastScrollY]);
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    setIsScrolled(window.scrollY > 50);
+
+    // 2. Track Active Section using IntersectionObserver (highly performant)
+    const observerOptions = {
+      root: null,
+      rootMargin: '-50% 0px -50% 0px', // Trigger when section hits the middle of viewport
+      threshold: 0
+    };
+
+    const observerCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    
+    // Check if wait for DOM load is needed - but since it's Next.js client component it's likely fine
+    setTimeout(() => {
+      const sections = mockData.navigation.map(item => item.id);
+      sections.forEach((id) => {
+        const element = document.getElementById(id);
+        if (element) observer.observe(element);
+      });
+    }, 100);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      observer.disconnect();
+    };
+  }, []);
+
+  const scrollToSection = (id) => {
+    setActiveSection(id);
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      setIsMobileMenuOpen(false);
+    }
+  };
 
   return (
-    <motion.nav
-      initial={{ y: -100 }}
-      animate={{ y: showNavbar ? 0 : -100 }}
-      transition={{ duration: 0.3, ease: "easeInOut" }}
-      className="nav-styles sm:px-16 px-6"
-    >
-      {/* Logo */}
-      <a href="#home">
-        <img
-          src={parthmittal}
-          alt="Naveen Gautam" 
-          className="w-[75px] h-[75px] mt-[7px] mb-[7px]"
-        />
-      </a>
-
-      {/* List of links */}
-      <ul className="list-none sm:flex hidden justify-end items-center flex-1 p-4">
-        {navLinks.map((nav, index) => (
-          <li
-            key={nav.id}
-            className={`font-poppins
-            font-normal
-            cursor-pointer
-            text-[16px]
-            ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}
-            text-white hover:text-teal-200`}
-            onClick={() => scrollToSection(nav.id)}
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-black/80 backdrop-blur-lg' : 'bg-transparent'
+      }`}>
+      <div className="px-4 py-4 mx-auto font-semibold max-w-7xl">
+        <div className="flex items-center justify-between">
+          {/* Logo */}
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className="text-xl font-semibold text-white transition-opacity duration-300 cursor-pointer textfont-medium ftracking-wider hover:opacity-100"
           >
-            {nav.title}
-          </li>
-        ))}
-      </ul>
+            <span className="ml-2 text-2xl font-black text-white">Naveen</span>
+            <span className="inline-block w-2 h-2 rounded-full bg-[#c4ff00] ml-1"></span>
+          </button>
 
-      {/* only for mobile devices, created separately */}
-      <div className="sm:hidden flex flex-1 justify-end items-center">
-        {/* shows toggle icon based on its state */}
-        <img
-          src={toggle ? close : menu}
-          alt="menu"
-          className="w-[28px] h-[28px] object-contain"
-          // correct way to change state using the prev
-          // version of the same state using a callback function
-          onClick={() => setToggle((prev) => !prev)}
-        />
-
-        <div
-          className={`${toggle ? "flex" : "hidden"} p-6 bg-black-gradient
-        absolute top-20 right-0 mx-4 my-2
-        min-w-[140px] rounded-xl sidebar`}
-        >
-          <ul className="list-none flex flex-col justify-end items-center flex-1">
-            {navLinks.map((nav, index) => (
-              <li
-                key={nav.id}
-                className={`font-poppins
-                font-normal
-                cursor-pointer
-                text-[16px]
-                ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}
-                text-white`}
+          {/* Desktop Navigation */}
+          <div className="items-center hidden gap-8 md:flex">
+            {mockData.navigation.map((item) => (
+              <button
+                key={item.id}
+                onClick={() => scrollToSection(item.id)}
+                className={`text-sm tracking-wide transition-colors duration-300 cursor-pointer ${activeSection === item.id ? 'text-[#c4ff00]' : 'text-white hover:text-[#c4ff00]'
+                  }`}
               >
-                <a href={`#${nav.id}`}>{nav.title}</a>
-              </li>
+                {item.label}
+              </button>
             ))}
-          </ul>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="text-white cursor-pointer md:hidden"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="py-4 mt-4 border-t md:hidden border-white/10">
+            {mockData.navigation.map((item) => (
+              <button
+                key={item.id}
+                onClick={() => scrollToSection(item.id)}
+                className={`block w-full text-left text-sm tracking-wide py-3 transition-colors duration-300 cursor-pointer ${activeSection === item.id ? 'text-[#c4ff00]' : 'text-white hover:text-[#c4ff00]'
+                  }`}
+              >
+                {item.label}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
-    </motion.nav>
+    </nav>
   );
 };
 

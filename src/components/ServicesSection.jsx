@@ -22,18 +22,18 @@ const ServicesSection = () => {
               <div className="w-3 h-3 bg-gray-700 rounded-full"></div>
             </div>
           </div>
-          <h2 className="font-serif text-4xl md:text-5xl lg:text-7xl text-white">What I Offer</h2>
+          <h2 className="font-serif text-3xl md:text-5xl lg:text-7xl text-white">What I Offer</h2>
         </div>
 
         {/* Service grid */}
         <div className="relative flex flex-col md:flex-row mb-16 md:mb-32 gap-8 md:gap-4">
           {/* Left side - About text */}
           <div className="md:ml-4 md:mr-12">
-            <h2 className="mb-8 font-serif text-4xl md:text-5xl leading-tight text-white">
+            <h2 className="mb-6 md:mb-8 font-serif text-3xl md:text-5xl leading-tight text-white">
               Automate{' '}
               <span className="text-[#c4ff00]">Website</span>
             </h2>
-            <p className="leading-relaxed text-gray-200 mb-14 text-md">
+            <p className="leading-relaxed text-gray-200 mb-8 md:mb-14 text-sm md:text-md">
               I build smart, automated websites that work for your<br className="hidden md:block" />
               business 24/7 capturing leads, engaging visitors, and<br className="hidden md:block" />
               driving growth while you focus on what matters most.
@@ -83,11 +83,11 @@ const ServicesSection = () => {
           </div>
           {/* Right side - About text */}
           <div className="md:ml-10 order-1 md:order-2">
-            <h2 className="mb-8 font-serif text-4xl md:text-5xl leading-tight text-white">
+            <h2 className="mb-6 md:mb-8 font-serif text-3xl md:text-5xl leading-tight text-white">
               Web{' '}
               <span className="text-[#c4ff00]">Development</span>
             </h2>
-            <p className="leading-relaxed text-gray-200 mb-16 text-md">
+            <p className="leading-relaxed text-gray-200 mb-8 md:mb-16 text-sm md:text-md">
               Crafting innovative web development solutions that<br className="hidden md:block" />
               turn your vision into reality built to scale, designed<br className="hidden md:block" />
               to convert, and to drive real business results.
@@ -115,11 +115,11 @@ const ServicesSection = () => {
         <div className="relative flex flex-col md:flex-row mb-12 md:mb-20 gap-8 md:gap-4">
           {/* Left side - About text */}
           <div className="md:ml-4 md:mr-12">
-            <h2 className="mb-8 font-serif text-4xl md:text-5xl leading-tight text-white">
+            <h2 className="mb-6 md:mb-8 font-serif text-3xl md:text-5xl leading-tight text-white">
               AI{' '}
               <span className="text-[#c4ff00]">Automation</span>
             </h2>
-            <p className="leading-relaxed text-gray-200 mb-14 text-md">
+            <p className="leading-relaxed text-gray-200 mb-8 md:mb-14 text-sm md:text-md">
               Building intelligent automation systems that work for<br className="hidden md:block" />
               your business 24/7 eliminating repetitive tasks,<br className="hidden md:block" />
               connecting your tools, and delivering real results<br className="hidden md:block" />

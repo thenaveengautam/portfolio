@@ -21,7 +21,7 @@ const AboutSection = () => {
               <div className="w-3 h-3 bg-gray-700 rounded-full"></div>
             </div>
           </div>
-          <h2 className="font-serif text-4xl md:text-5xl lg:text-7xl text-white">Who I
+          <h2 className="font-serif text-3xl md:text-5xl lg:text-7xl text-white">Who I
             <span className="text-[#c4ff00]"> Am</span>
           </h2>
         </div>
@@ -44,7 +44,7 @@ const AboutSection = () => {
               About{' '}
               <span className="text-[#c4ff00]">me</span>
             </h2> */}
-            <p className="text-base md:text-xl text-gray-200 leading-relaxed">
+            <p className="text-sm md:text-xl text-gray-200 leading-relaxed">
               Hi there! I am a Full-Stack Developer & AI Automation
               Engineer, I specialize in designing, developing, and deploying
               delivering real-world web and smart automation solutions
@@ -67,12 +67,12 @@ const AboutSection = () => {
         <div className="grid items-center mb-16 md:mb-24 gap-10 md:gap-16 md:grid-cols-2">
           {/* Left side - About text */}
           <div className="md:ml-4">
-            <h2 className="mb-8 font-serif text-4xl md:text-5xl lg:text-7xl leading-tight text-white">
+            <h2 className="mb-6 md:mb-8 font-serif text-3xl md:text-5xl lg:text-7xl leading-tight text-white">
               Crafting{' '}
               <span className="text-[#c4ff00]">smart</span>{' '}
               <span className="text-[#c4ff00]">solutions</span> that drive results
             </h2>
-            <p className="text-base md:text-lg leading-relaxed text-gray-200">
+            <p className="text-sm md:text-lg leading-relaxed text-gray-200">
               From idea to deployment, Crafting innovative web applications and automation workflows that saves time, reduces effort, scale your growth, and drive business success. From
               pixel-perfect frontends to rock-solid backends — every product I
               deliver is engineered to perform, convert, and grow. Whether you
@@ -107,12 +107,12 @@ const AboutSection = () => {
           </div>
           {/* Right side - About text */}
           <div className="order-1 md:order-2">
-            <h2 className="mb-8 md:ml-2 font-serif text-4xl md:text-5xl lg:text-7xl leading-tight text-white">
+            <h2 className="mb-6 md:mb-8 md:ml-2 font-serif text-3xl md:text-5xl lg:text-7xl leading-tight text-white">
               Transforming your{' '}
               <span className="text-[#c4ff00]">website dreams</span> into a digital{' '}
               <span className="text-[#c4ff00]">reality</span>
             </h2>
-            <p className="md:ml-2 text-base md:text-lg leading-relaxed text-gray-200">
+            <p className="md:ml-2 text-sm md:text-lg leading-relaxed text-gray-200">
               As a next-generation full-stack developer, I don't just build websites —
               I craft powerful digital experiences that speak for your brand, engage
               your audience, and convert visitors into loyal customers. Because in today's digital world, your
@@ -125,13 +125,13 @@ const AboutSection = () => {
         <div className="grid items-start gap-10 md:gap-16 md:grid-cols-2">
           {/* Left side - Code heading and description */}
           <div className="md:ml-4">
-            <h3 className="mb-8 font-serif text-4xl md:text-5xl lg:text-7xl text-white">
+            <h3 className="mb-6 md:mb-8 font-serif text-3xl md:text-5xl lg:text-7xl text-white">
               Turning ideas{' '}
               <span className="text-[#c4ff00]">into</span> reality{' '}
               <br className="hidden md:block" />
               through <span className="text-[#c4ff00]">code</span>
             </h3>
-            <p className="mb-8 text-base md:text-lg leading-relaxed text-gray-200">
+            <p className="mb-6 md:mb-8 text-sm md:text-lg leading-relaxed text-gray-200">
               {mockData.about.description}
             </p>
 

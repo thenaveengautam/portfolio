@@ -101,7 +101,7 @@ const Hero3D = () => {
         </div>
 
         {/* Main heading with 3D depth */}
-        <h1 className="mb-12 md:mb-16 font-serif text-5xl md:text-8xl lg:text-9xl leading-tight"
+        <h1 className="mb-12 md:mb-16 font-serif text-4xl md:text-8xl lg:text-9xl leading-tight"
           style={{
             transform: `perspective(1000px) rotateX(${mousePosition.y * 0}deg) rotateY(${mousePosition.x * 0}deg)`,
             textShadow: '0 10px 30px rgba(0, 0, 0, 0.5)'

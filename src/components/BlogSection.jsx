@@ -24,7 +24,7 @@ const BlogSection = () => {
               <div className="w-3 h-3 bg-gray-700 rounded-full"></div>
             </div>
           </div>
-          <h2 className="font-serif text-4xl md:text-5xl lg:text-7xl text-white">Latest Insights</h2>
+          <h2 className="font-serif text-3xl md:text-5xl lg:text-7xl text-white">Latest Insights</h2>
         </div>
 
         {/* Blog posts grid */}

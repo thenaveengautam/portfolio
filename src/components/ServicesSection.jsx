@@ -10,7 +10,7 @@ const ServicesSection = () => {
       <div className="mx-auto max-w-7xl">
         {/* Section header */}
         <div className="flex items-center justify-between mb-20">
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 ml-4">
             <span className="text-[#c4ff00] text-4xl font-light">02.</span>
             <div className="flex gap-2">
               <div className="w-3 h-3 rounded-full bg-[#c4ff00]" style={{ animation: 'dotPulse 2s infinite', animationDelay: '0s' }}></div>
@@ -26,11 +26,11 @@ const ServicesSection = () => {
         </div>
 
         {/* Service grid */}
-        <div className="relative flex flex-col md:flex-row mb-32 gap-10 md:gap-0">
+        <div className="relative flex flex-col md:flex-row mb-32 gap-10 md:gap-4">
           {/* Left side - About text */}
-          <div className="md:ml-2 md:mr-12">
+          <div className="md:ml-4 md:mr-12">
             <h2 className="mb-8 font-serif text-4xl md:text-5xl leading-tight text-white">
-              Automated{' '}
+              Automate{' '}
               <span className="text-[#c4ff00]">Website</span>
             </h2>
             <p className="leading-relaxed text-gray-200 mb-14 text-md">
@@ -61,7 +61,7 @@ const ServicesSection = () => {
               <img
                 src="automated_web.jpg"
                 alt="Automated Website"
-                className="w-full transition-transform duration-500 transform rounded-2xl h-[400px] object-cover group-hover:scale-105"
+                className="w-[740px] transition-transform duration-500 transform rounded-2xl h-[430px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#c4ff00]/1 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             </div>
@@ -69,25 +69,25 @@ const ServicesSection = () => {
         </div>
 
         {/* Service grid */}
-        <div className="relative flex flex-col md:flex-row mb-32 gap-10 md:gap-0">
+        <div className="relative flex flex-col md:flex-row mb-32 gap-10 md:gap-4">
           {/* Left side - 3D Image */}
-          <div className="relative md:mx-2 md:absolute-right-0">
-            <div className="relative group">
+          <div className="relative md:mx-2 md:absolute-right-0 order-2 md:order-1">
+            <div className="relative group ml-2">
               <img
                 src="web_develop.jpg"
                 alt="Web Development"
-                className="w-full transition-transform duration-500 transform h-[400px] object-cover rounded-2xl group-hover:scale-105"
+                className="w-[730px] transition-transform duration-500 transform h-[430px] object-cover rounded-2xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#c4ff00]/1 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             </div>
           </div>
           {/* Right side - About text */}
-          <div className="md:ml-10">
+          <div className="md:ml-10 order-1 md:order-2">
             <h2 className="mb-8 font-serif text-4xl md:text-5xl leading-tight text-white">
               Web{' '}
               <span className="text-[#c4ff00]">Development</span>
             </h2>
-            <p className="leading-relaxed text-gray-200 mb-14 text-md">
+            <p className="leading-relaxed text-gray-200 mb-16 text-md">
               Crafting innovative web development solutions that<br />
               turn your vision into reality built to scale, designed<br />
               to convert, and to drive real business results.
@@ -112,9 +112,9 @@ const ServicesSection = () => {
         </div>
 
         {/* Service grid */}
-        <div className="relative flex flex-col md:flex-row mb-20 gap-10 md:gap-0">
+        <div className="relative flex flex-col md:flex-row mb-20 gap-10 md:gap-4">
           {/* Left side - About text */}
-          <div className="md:ml-2 md:mr-12">
+          <div className="md:ml-4 md:mr-12">
             <h2 className="mb-8 font-serif text-4xl md:text-5xl leading-tight text-white">
               AI{' '}
               <span className="text-[#c4ff00]">Automation</span>
@@ -148,7 +148,7 @@ const ServicesSection = () => {
               <img
                 src="automation.jpg"
                 alt="Automation"
-                className="w-full transition-transform duration-500 transform rounded-2xl h-[400px] object-cover group-hover:scale-105"
+                className="w-[740px] transition-transform duration-500 transform rounded-2xl h-[430px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#c4ff00]/1 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             </div>

@@ -10,7 +10,7 @@ const PortfolioSection = () => {
       <div className="mx-auto max-w-7xl">
         {/* Section header */}
         <div className="flex items-center justify-between mb-16">
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 ml-4">
             <span className="text-[#c4ff00] text-4xl font-light">03.</span>
             <div className="flex gap-2">
               <div className="w-3 h-3 rounded-full bg-[#c4ff00]" style={{ animation: 'dotPulse 2s infinite', animationDelay: '0s' }}></div>
@@ -30,17 +30,17 @@ const PortfolioSection = () => {
           {mockData.portfolio.map((project) => (
             <div
               key={project.id}
-              className="flex flex-col md:flex-row bg-gradient-to-br transition-all duration-500 min-h-[220px] rounded-sm overflow-hidden"
+              className="flex flex-col md:flex-row bg-gradient-to-br transition-all duration-500 min-h-[220px] rounded-2xl overflow-hidden ml-4"
             >
               {/* LEFT — Content */}
-              <div className="flex flex-col justify-start p-8 w-full md:w-[30%] shrink-0 bg-[#000000] pt-6">
-                <span className="text-[#c4ff00] text-3xl md:text-4xl font-semibold mb-8">
+              <div className="flex flex-col justify-start p-9 w-full md:w-[30%] shrink-0 bg-[#000000] pt-8">
+                <span className="text-[#c4ff00] text-3xl md:text-3xl font-semibold mb-8">
                   {project.category}
                 </span>
-                <h3 className="mb-2 text-2xl font-semibold leading-snug text-white">
+                <h3 className="mb-4 text-lg font-semibold leading-snug text-white">
                   {project.title}
                 </h3>
-                <p className="mb-10 leading-relaxed text-gray-400 text-md">
+                <p className="mb-8 leading-relaxed text-gray-400 text-md">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-3">

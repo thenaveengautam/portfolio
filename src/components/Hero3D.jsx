@@ -37,7 +37,7 @@ const Hero3D = () => {
   }, []);
 
   return (
-    <section className="relative min-h-[85vh] md:min-h-screen flex items-end md:items-center justify-center overflow-hidden bg-[#0a0a0a] pb-16 md:pb-0">
+    <section className="relative min-h-[92vh] md:min-h-screen flex items-center justify-center overflow-hidden bg-[#0a0a0a] pt-16 md:pt-0">
       {/* Animated Grid Background */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute inset-0" style={{

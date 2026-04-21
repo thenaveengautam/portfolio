@@ -6,10 +6,10 @@ import { mockData } from '../mockData';
 
 const TestimonialsSection = () => {
   return (
-    <section id="testimonials" className="min-h-screen bg-[#0a0a0a] py-20 px-6">
+    <section id="testimonials" className="min-h-screen bg-[#0a0a0a] py-12 md:py-20 px-6">
       <div className="mx-auto max-w-7xl">
         {/* Section header */}
-        <div className="flex items-center justify-between mb-20">
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-12 md:mb-20 gap-4 md:gap-0">
           <div className="flex items-center gap-4">
             <span className="text-[#c4ff00] text-4xl font-light">04.</span>
             <div className="flex gap-2">
@@ -22,7 +22,7 @@ const TestimonialsSection = () => {
               <div className="w-3 h-3 bg-gray-700 rounded-full"></div>
             </div>
           </div>
-          <h2 className="font-serif text-5xl text-white md:text-7xl">Testimonials</h2>
+          <h2 className="font-serif text-4xl md:text-5xl lg:text-7xl text-white">Testimonials</h2>
         </div>
 
         {/* <div className="mb-16 text-center">
@@ -31,7 +31,7 @@ const TestimonialsSection = () => {
         </div> */}
 
         {/* Testimonials grid */}
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-6 md:gap-8 grid-cols-1 md:grid-cols-3">
           {mockData.testimonials.map((testimonial) => (
             <div
               key={testimonial.id}

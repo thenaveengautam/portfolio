@@ -80,13 +80,7 @@ const Hero3D = () => {
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black"></div>
 
-      {/* Top middle - Available for work */}
-      <div className="absolute z-20 -translate-x-1/2 top-14 left-1/2">
-        <p className="text-[#c4ff00] text-sm font-medium tracking-wider flex items-center gap-2">
-          <span className="w-2 h-2 bg-[#c4ff00] rounded-full animate-pulse"></span>
-          AVAILABLE FOR WORK
-        </p>
-      </div>
+
 
       {/* Bottom left text */}
       <div className="absolute z-20 left-8 bottom-8">
@@ -95,17 +89,26 @@ const Hero3D = () => {
       </div>
 
       {/* Content */}
-      <div className={`relative z-10 text-center px-6 max-w-5xl transition-all duration-1000 transform ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+      <div className={`relative z-10 flex flex-col items-center justify-center text-center px-6 max-w-5xl transition-all duration-1000 transform ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
         }`}>
+        
+        {/* Available for work badge */}
+        <div className="mb-10 md:mb-12">
+          <p className="text-[#c4ff00] text-xs md:text-sm font-medium tracking-wider flex items-center justify-center gap-2 px-4 py-2 bg-[#c4ff00]/5 rounded-full border border-[#c4ff00]/20 backdrop-blur-sm">
+            <span className="w-2 h-2 bg-[#c4ff00] rounded-full animate-pulse"></span>
+            AVAILABLE FOR WORK
+          </p>
+        </div>
+
         {/* Main heading with 3D depth */}
-        <h1 className="mb-16 font-serif text-6xl md:text-8xl lg:text-9xl"
+        <h1 className="mb-12 md:mb-16 font-serif text-5xl md:text-8xl lg:text-9xl leading-tight"
           style={{
             transform: `perspective(1000px) rotateX(${mousePosition.y * 0}deg) rotateY(${mousePosition.x * 0}deg)`,
             textShadow: '0 10px 30px rgba(0, 0, 0, 0.5)'
           }}
         >
           <span className="block text-white ">SOFTWARE </span>
-          <span className="text-[#c4ff00] block mt-2"
+          <span className="text-[#c4ff00] block mt-1 md:mt-2"
             style={{
               textShadow: '0 0 40px rgba(196, 255, 0, 0.4), 0 10px 30px rgba(0, 0, 0, 0.5)'
             }}

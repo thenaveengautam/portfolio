@@ -5,10 +5,10 @@ import { mockData } from '../mockData';
 
 const AboutSection = () => {
   return (
-    <section id="about" className="min-h-screen bg-[#0a0a0a] px-6 py-20">
+    <section id="about" className="min-h-screen bg-[#0a0a0a] px-6 py-12 md:py-20">
       <div className="mx-auto max-w-7xl">
         {/* Section header */}
-        <div className="flex items-center justify-between mb-10">
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-8 md:mb-10 gap-4 md:gap-0">
           <div className="flex items-center gap-4 ml-4">
             <span className="text-[#c4ff00] text-4xl font-light">01.</span>
             <div className="flex gap-2">
@@ -21,19 +21,19 @@ const AboutSection = () => {
               <div className="w-3 h-3 bg-gray-700 rounded-full"></div>
             </div>
           </div>
-          <h2 className="font-serif text-5xl text-white md:text-7xl">Who I
+          <h2 className="font-serif text-4xl md:text-5xl lg:text-7xl text-white">Who I
             <span className="text-[#c4ff00]"> Am</span>
           </h2>
         </div>
 
-        <div className="grid items-center gap-16 mb-24 md:grid-cols-2">
+        <div className="grid items-center gap-10 md:gap-16 mb-16 md:mb-24 md:grid-cols-2">
           {/* Left side - 3D Image */}
           <div className="relative ml-4">
             <div className="relative group">
               <img
                 src="naveen.jpg"
                 alt="Naveen Gautam"
-                className="w-full transition-transform duration-500 transform grayscale rounded-2xl group-hover:scale-105 h-[420px] object-cover"
+                className="w-full transition-transform duration-500 transform grayscale rounded-2xl group-hover:scale-105 h-[280px] md:h-[420px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#c4ff00]/1 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             </div>
@@ -64,10 +64,10 @@ const AboutSection = () => {
           </div>
         </div>
 
-        <div className="grid items-center mb-24 gap-16 md:grid-cols-2">
+        <div className="grid items-center mb-16 md:mb-24 gap-10 md:gap-16 md:grid-cols-2">
           {/* Left side - About text */}
           <div className="ml-4">
-            <h2 className="mb-8 font-serif text-5xl leading-tight text-white md:text-7xl">
+            <h2 className="mb-8 font-serif text-4xl md:text-5xl lg:text-7xl leading-tight text-white">
               Crafting{' '}
               <span className="text-[#c4ff00]">smart</span>{' '}
               <span className="text-[#c4ff00]">solutions</span> that drive results
@@ -86,28 +86,28 @@ const AboutSection = () => {
               <img
                 src="/craft_sol.jpg"
                 alt="Web & Automation Solutions"
-                className="w-full transition-transform duration-500 transform rounded-2xl group-hover:scale-105 h-[400px] object-cover"
+                className="w-full transition-transform duration-500 transform rounded-2xl group-hover:scale-105 h-[250px] md:h-[400px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#c4ff00]/1 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             </div>
           </div>
         </div>
 
-        <div className="grid items-center gap-20 mb-28 md:grid-cols-[1.0fr_0.9fr]">
+        <div className="grid items-center gap-12 md:gap-20 mb-16 md:mb-28 md:grid-cols-[1.0fr_0.9fr]">
           {/* Left side - 3D Image */}
           <div className="relative order-2 ml-4 md:order-1">
             <div className="relative group">
               <img
                 src="/website_dreams.jpg"
                 alt="Transforming website dreams into digital reality"
-                className="w-full transition-transform duration-500 transform rounded-2xl group-hover:scale-105 h-[400px] object-cover object-center"
+                className="w-full transition-transform duration-500 transform rounded-2xl group-hover:scale-105 h-[250px] md:h-[400px] object-cover object-center"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#c4ff00]/1 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             </div>
           </div>
           {/* Right side - About text */}
           <div className="order-1 md:order-2">
-            <h2 className="mb-8 ml-2 font-serif text-5xl leading-tight text-white md:text-7xl">
+            <h2 className="mb-8 ml-2 font-serif text-4xl md:text-5xl lg:text-7xl leading-tight text-white">
               Transforming your{' '}
               <span className="text-[#c4ff00]">website dreams</span> into a digital{' '}
               <span className="text-[#c4ff00]">reality</span>
@@ -122,10 +122,10 @@ const AboutSection = () => {
         </div>
 
         {/* Code Section */}
-        <div className="grid items-start gap-16 md:grid-cols-2">
+        <div className="grid items-start gap-10 md:gap-16 md:grid-cols-2">
           {/* Left side - Code heading and description */}
           <div className="ml-4">
-            <h3 className="mb-8 font-serif text-5xl text-white md:text-7xl">
+            <h3 className="mb-8 font-serif text-4xl md:text-5xl lg:text-7xl text-white">
               Turning ideas{' '}
               <span className="text-[#c4ff00]">into</span> reality{' '}
               <br />
@@ -229,7 +229,7 @@ const AboutSection = () => {
               <img
                 src="/code_reality.png"
                 alt="Turning ideas into reality through code"
-                className="w-full transition-transform duration-500 transform rounded-2xl group-hover:scale-105 h-[370px] object-cover object-center"
+                className="w-full transition-transform duration-500 transform rounded-2xl group-hover:scale-105 h-[250px] md:h-[370px] object-cover object-center"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/1 to-transparent rounded-2xl"></div>
             </div>

@@ -6,10 +6,10 @@ import { ExternalLink } from 'lucide-react';
 
 const PortfolioSection = () => {
   return (
-    <section id="portfolio" className="min-h-screen bg-[#0a0a0a] py-20 px-6">
+    <section id="portfolio" className="min-h-screen bg-[#0a0a0a] py-12 md:py-20 px-6">
       <div className="mx-auto max-w-7xl">
         {/* Section header */}
-        <div className="flex items-center justify-between mb-16">
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-10 md:mb-16 gap-4 md:gap-0">
           <div className="flex items-center gap-4 ml-4">
             <span className="text-[#c4ff00] text-4xl font-light">03.</span>
             <div className="flex gap-2">
@@ -22,7 +22,7 @@ const PortfolioSection = () => {
               <div className="w-3 h-3 bg-gray-700 rounded-full"></div>
             </div>
           </div>
-          <h2 className="font-serif text-5xl text-white md:text-7xl">Portfolio</h2>
+          <h2 className="font-serif text-4xl md:text-5xl lg:text-7xl text-white">Portfolio</h2>
         </div>
 
         {/* Projects list */}
@@ -60,7 +60,7 @@ const PortfolioSection = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="object-cover w-full transition-transform duration-500 h-[450px] group-hover:scale-110"
+                  className="object-cover w-full transition-transform duration-500 h-[250px] md:h-[450px] group-hover:scale-110"
                 />
                 {/* Left-side fade overlay for smooth blend */}
                 <div className="absolute inset-0 bg-gradient-to-r from-black/0 to-transparent" />

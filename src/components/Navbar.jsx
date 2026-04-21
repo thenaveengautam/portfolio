@@ -67,10 +67,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-black/80 backdrop-blur-lg' : 'bg-transparent'
+    <nav className={`fixed top-0 left-0 right-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-black/80 backdrop-blur-lg' : 'bg-transparent'
       }`}>
-      <div className="px-4 py-4 mx-auto font-semibold max-w-7xl">
-        <div className="flex items-center justify-between">
+      <div className="px-4 md:px-6 py-4 mx-auto font-semibold max-w-7xl w-full">
+        <div className="flex items-center justify-between w-full">
           {/* Logo */}
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}

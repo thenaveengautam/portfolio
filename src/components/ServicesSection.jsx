@@ -6,10 +6,10 @@ import { mockData } from '../mockData';
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="min-h-screen bg-[#0a0a0a] pt-20 px-6">
+    <section id="services" className="min-h-screen bg-[#0a0a0a] pt-12 md:pt-20 px-6">
       <div className="mx-auto max-w-7xl">
         {/* Section header */}
-        <div className="flex items-center justify-between mb-20">
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-12 md:mb-20 gap-4 md:gap-0">
           <div className="flex items-center gap-4 ml-4">
             <span className="text-[#c4ff00] text-4xl font-light">02.</span>
             <div className="flex gap-2">
@@ -22,11 +22,11 @@ const ServicesSection = () => {
               <div className="w-3 h-3 bg-gray-700 rounded-full"></div>
             </div>
           </div>
-          <h2 className="font-serif text-5xl text-white md:text-7xl">What I Offer</h2>
+          <h2 className="font-serif text-4xl md:text-5xl lg:text-7xl text-white">What I Offer</h2>
         </div>
 
         {/* Service grid */}
-        <div className="relative flex flex-col md:flex-row mb-32 gap-10 md:gap-4">
+        <div className="relative flex flex-col md:flex-row mb-16 md:mb-32 gap-8 md:gap-4">
           {/* Left side - About text */}
           <div className="md:ml-4 md:mr-12">
             <h2 className="mb-8 font-serif text-4xl md:text-5xl leading-tight text-white">
@@ -61,7 +61,7 @@ const ServicesSection = () => {
               <img
                 src="automated_web.jpg"
                 alt="Automated Website"
-                className="w-[740px] transition-transform duration-500 transform rounded-2xl h-[430px] object-cover"
+                className="w-full md:w-[740px] transition-transform duration-500 transform rounded-2xl h-[250px] md:h-[430px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#c4ff00]/1 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             </div>
@@ -69,14 +69,14 @@ const ServicesSection = () => {
         </div>
 
         {/* Service grid */}
-        <div className="relative flex flex-col md:flex-row mb-32 gap-10 md:gap-4">
+        <div className="relative flex flex-col md:flex-row mb-16 md:mb-32 gap-8 md:gap-4">
           {/* Left side - 3D Image */}
           <div className="relative md:mx-2 md:absolute-right-0 order-2 md:order-1">
             <div className="relative group ml-2">
               <img
                 src="web_develop.jpg"
                 alt="Web Development"
-                className="w-[730px] transition-transform duration-500 transform h-[430px] object-cover rounded-2xl"
+                className="w-full md:w-[730px] transition-transform duration-500 transform h-[250px] md:h-[430px] object-cover rounded-2xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#c4ff00]/1 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             </div>
@@ -112,7 +112,7 @@ const ServicesSection = () => {
         </div>
 
         {/* Service grid */}
-        <div className="relative flex flex-col md:flex-row mb-20 gap-10 md:gap-4">
+        <div className="relative flex flex-col md:flex-row mb-12 md:mb-20 gap-8 md:gap-4">
           {/* Left side - About text */}
           <div className="md:ml-4 md:mr-12">
             <h2 className="mb-8 font-serif text-4xl md:text-5xl leading-tight text-white">
@@ -148,7 +148,7 @@ const ServicesSection = () => {
               <img
                 src="automation.jpg"
                 alt="Automation"
-                className="w-[740px] transition-transform duration-500 transform rounded-2xl h-[430px] object-cover"
+                className="w-full md:w-[740px] transition-transform duration-500 transform rounded-2xl h-[250px] md:h-[430px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#c4ff00]/1 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             </div>

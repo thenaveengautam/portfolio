@@ -34,9 +34,9 @@ const ServicesSection = () => {
               <span className="text-[#c4ff00]">Website</span>
             </h2>
             <p className="leading-relaxed text-gray-200 mb-14 text-md">
-              I build smart, automated websites that work for your<br />
-              business 24/7 capturing leads, engaging visitors, and<br />
-              driving growth while you focus on what matters most.<br />
+              I build smart, automated websites that work for your<br className="hidden md:block" />
+              business 24/7 capturing leads, engaging visitors, and<br className="hidden md:block" />
+              driving growth while you focus on what matters most.
             </p>
             <ul className="space-y-5">
               {[
@@ -88,8 +88,8 @@ const ServicesSection = () => {
               <span className="text-[#c4ff00]">Development</span>
             </h2>
             <p className="leading-relaxed text-gray-200 mb-16 text-md">
-              Crafting innovative web development solutions that<br />
-              turn your vision into reality built to scale, designed<br />
+              Crafting innovative web development solutions that<br className="hidden md:block" />
+              turn your vision into reality built to scale, designed<br className="hidden md:block" />
               to convert, and to drive real business results.
             </p>
             <ul className="space-y-5">
@@ -120,9 +120,9 @@ const ServicesSection = () => {
               <span className="text-[#c4ff00]">Automation</span>
             </h2>
             <p className="leading-relaxed text-gray-200 mb-14 text-md">
-              Building intelligent automation systems that work for<br />
-              your business 24/7 eliminating repetitive tasks,<br />
-              connecting your tools, and delivering real results<br />
+              Building intelligent automation systems that work for<br className="hidden md:block" />
+              your business 24/7 eliminating repetitive tasks,<br className="hidden md:block" />
+              connecting your tools, and delivering real results<br className="hidden md:block" />
               while you sleep.
             </p>
             <ul className="space-y-5">

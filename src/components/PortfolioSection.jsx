@@ -26,24 +26,24 @@ const PortfolioSection = () => {
         </div>
 
         {/* Projects list */}
-        <div className="flex flex-col gap-16">
+        <div className="flex flex-col gap-10 md:gap-16">
           {mockData.portfolio.map((project) => (
             <div
               key={project.id}
-              className="flex flex-col md:flex-row bg-gradient-to-br transition-all duration-500 min-h-[220px] rounded-2xl overflow-hidden ml-4"
+              className="flex flex-col md:flex-row bg-gradient-to-br transition-all duration-500 min-h-[220px] rounded-2xl overflow-hidden md:ml-4"
             >
               {/* LEFT — Content */}
-              <div className="flex flex-col justify-start p-9 w-full md:w-[30%] shrink-0 bg-[#000000] pt-8">
-                <span className="text-[#c4ff00] text-3xl md:text-3xl font-semibold mb-8">
+              <div className="flex flex-col justify-start p-6 md:p-9 w-full md:w-[30%] shrink-0 bg-[#000000] pt-6 md:pt-8">
+                <span className="text-[#c4ff00] text-2xl md:text-3xl font-semibold mb-4 md:mb-8">
                   {project.category}
                 </span>
                 <h3 className="mb-4 text-lg font-semibold leading-snug text-white">
                   {project.title}
                 </h3>
-                <p className="mb-8 leading-relaxed text-gray-400 text-md">
+                <p className="mb-5 md:mb-8 leading-relaxed text-gray-400 text-sm md:text-md">
                   {project.description}
                 </p>
-                <div className="flex flex-wrap gap-3">
+                <div className="flex flex-wrap gap-2 md:gap-3">
                   {project.tags.map((tag) => (
                     <span
                       key={tag}

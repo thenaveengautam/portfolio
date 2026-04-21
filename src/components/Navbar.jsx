@@ -105,17 +105,19 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="py-4 mt-4 border-t md:hidden border-white/10">
-            {mockData.navigation.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className={`block w-full text-left text-sm tracking-wide py-3 transition-colors duration-300 cursor-pointer ${activeSection === item.id ? 'text-[#c4ff00]' : 'text-white hover:text-[#c4ff00]'
-                  }`}
-              >
-                {item.label}
-              </button>
-            ))}
+          <div className="py-6 mt-4 border-t md:hidden border-white/10 bg-black/95 backdrop-blur-xl rounded-b-2xl">
+            <div className="flex flex-col gap-1">
+              {mockData.navigation.map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
+                  className={`w-full text-left text-base tracking-wide py-3 px-4 rounded-xl transition-all duration-300 cursor-pointer ${activeSection === item.id ? 'text-[#c4ff00] bg-[#c4ff00]/10 font-medium' : 'text-white/80 hover:text-[#c4ff00] hover:bg-white/5'
+                    }`}
+                >
+                  {item.label}
+                </button>
+              ))}
+            </div>
           </div>
         )}
       </div>

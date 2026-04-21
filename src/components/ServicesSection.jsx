@@ -10,7 +10,7 @@ const ServicesSection = () => {
       <div className="mx-auto max-w-7xl">
         {/* Section header */}
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-12 md:mb-20 gap-4 md:gap-0">
-          <div className="flex items-center gap-4 ml-4">
+          <div className="flex items-center gap-4 md:ml-4">
             <span className="text-[#c4ff00] text-4xl font-light">02.</span>
             <div className="flex gap-2">
               <div className="w-3 h-3 rounded-full bg-[#c4ff00]" style={{ animation: 'dotPulse 2s infinite', animationDelay: '0s' }}></div>
@@ -38,7 +38,7 @@ const ServicesSection = () => {
               business 24/7 capturing leads, engaging visitors, and<br className="hidden md:block" />
               driving growth while you focus on what matters most.
             </p>
-            <ul className="space-y-5">
+            <ul className="space-y-3 md:space-y-5">
               {[
                 "AI-powered lead capture + automatic CRM sync",
                 "24/7 intelligent chatbot — engages + converts visitors",
@@ -72,7 +72,7 @@ const ServicesSection = () => {
         <div className="relative flex flex-col md:flex-row mb-16 md:mb-32 gap-8 md:gap-4">
           {/* Left side - 3D Image */}
           <div className="relative md:mx-2 md:absolute-right-0 order-2 md:order-1">
-            <div className="relative group ml-2">
+            <div className="relative group md:ml-2">
               <img
                 src="web_develop.jpg"
                 alt="Web Development"
@@ -92,7 +92,7 @@ const ServicesSection = () => {
               turn your vision into reality built to scale, designed<br className="hidden md:block" />
               to convert, and to drive real business results.
             </p>
-            <ul className="space-y-5">
+            <ul className="space-y-3 md:space-y-5">
               {[
                 "Custom full-stack web application development",
                 "Pixel-perfect UI with seamless backend integration",
@@ -125,7 +125,7 @@ const ServicesSection = () => {
               connecting your tools, and delivering real results<br className="hidden md:block" />
               while you sleep.
             </p>
-            <ul className="space-y-5">
+            <ul className="space-y-3 md:space-y-5">
               {[
                 "Intelligent workflow automation — zero manual effort",
                 "n8n + Zapier — multi-app workflow orchestration",

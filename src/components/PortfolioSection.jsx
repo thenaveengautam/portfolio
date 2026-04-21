@@ -10,7 +10,7 @@ const PortfolioSection = () => {
       <div className="mx-auto max-w-7xl">
         {/* Section header */}
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-10 md:mb-16 gap-4 md:gap-0">
-          <div className="flex items-center gap-4 ml-4">
+          <div className="flex items-center gap-4 md:ml-4">
             <span className="text-[#c4ff00] text-4xl font-light">03.</span>
             <div className="flex gap-2">
               <div className="w-3 h-3 rounded-full bg-[#c4ff00]" style={{ animation: 'dotPulse 2s infinite', animationDelay: '0s' }}></div>

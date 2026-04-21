@@ -5,9 +5,9 @@ import { Heart } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0a0a0a] border-t border-white/10 pt-12 px-6 pb-7">
+    <footer className="bg-[#0a0a0a] border-t border-white/10 pt-10 md:pt-12 px-6 pb-7">
       <div className="mx-auto max-w-7xl">
-        <div className="grid gap-8 mb-8 md:grid-cols-3">
+        <div className="grid gap-8 mb-8 grid-cols-1 md:grid-cols-3">
           {/* Brand */}
           <div>
             <div

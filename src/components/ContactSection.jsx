@@ -110,7 +110,7 @@ const ContactSection = () => {
           <p className="text-lg text-gray-400">Have a project in mind? Let's make it happen</p>
         </div> */}
 
-        <div className="grid gap-12 md:grid-cols-2">
+        <div className="grid gap-10 md:gap-12 grid-cols-1 md:grid-cols-2">
           {/* Contact info */}
           <div className="space-y-8">
             <div>
@@ -201,7 +201,7 @@ const ContactSection = () => {
           </div>
 
           {/* Contact form */}
-          <div className="bg-gradient-to-br from-white/5 to-white/[0.02] rounded-2xl p-8 border border-white/10">
+          <div className="bg-gradient-to-br from-white/5 to-white/[0.02] rounded-2xl p-6 md:p-8 border border-white/10">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block mb-2 text-sm text-gray-400">Name</label>

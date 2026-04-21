@@ -30,11 +30,11 @@ const PortfolioSection = () => {
           {mockData.portfolio.map((project) => (
             <div
               key={project.id}
-              className="flex flex-row bg-gradient-to-br transition-all duration-500 min-h-[220px] rounded-sm overflow-hidden"
+              className="flex flex-col md:flex-row bg-gradient-to-br transition-all duration-500 min-h-[220px] rounded-sm overflow-hidden"
             >
               {/* LEFT — Content */}
-              <div className="flex flex-col justify-start p-8 w-[30%] shrink-0 bg-[#000000] pt-6">
-                <span className="text-[#c4ff00] text-4xl font-semibold mb-8">
+              <div className="flex flex-col justify-start p-8 w-full md:w-[30%] shrink-0 bg-[#000000] pt-6">
+                <span className="text-[#c4ff00] text-3xl md:text-4xl font-semibold mb-8">
                   {project.category}
                 </span>
                 <h3 className="mb-2 text-2xl font-semibold leading-snug text-white">

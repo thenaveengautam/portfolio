@@ -95,7 +95,7 @@ const AboutSection = () => {
 
         <div className="grid items-center gap-16 mb-24 md:grid-cols-2">
           {/* Left side - 3D Image */}
-          <div className="relative ml-2">
+          <div className="relative ml-2 order-2 md:order-1">
             <div className="relative group">
               <img
                 src="/website_dreams.png"
@@ -106,7 +106,7 @@ const AboutSection = () => {
             </div>
           </div>
           {/* Right side - About text */}
-          <div>
+          <div className="order-1 md:order-2">
             <h2 className="mb-8 font-serif text-5xl leading-tight text-white md:text-7xl">
               Transforming your{' '}
               <span className="text-[#c4ff00]">website dreams</span> into a digital{' '}

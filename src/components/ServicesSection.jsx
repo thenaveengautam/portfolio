@@ -26,10 +26,10 @@ const ServicesSection = () => {
         </div>
 
         {/* Service grid */}
-        <div className="relative flex mb-32">
+        <div className="relative flex flex-col md:flex-row mb-32 gap-10 md:gap-0">
           {/* Left side - About text */}
-          <div className="ml-2 mr-12">
-            <h2 className="mb-8 font-serif text-5xl leading-tight text-white md:text-5xl">
+          <div className="md:ml-2 md:mr-12">
+            <h2 className="mb-8 font-serif text-4xl md:text-5xl leading-tight text-white">
               Automated{' '}
               <span className="text-[#c4ff00]">Website</span>
             </h2>
@@ -69,9 +69,9 @@ const ServicesSection = () => {
         </div>
 
         {/* Service grid */}
-        <div className="relative flex mb-32">
+        <div className="relative flex flex-col md:flex-row mb-32 gap-10 md:gap-0">
           {/* Left side - 3D Image */}
-          <div className="relative mx-2 absolute-right-0">
+          <div className="relative md:mx-2 md:absolute-right-0">
             <div className="relative group">
               <img
                 src="web_develop.jpg"
@@ -82,8 +82,8 @@ const ServicesSection = () => {
             </div>
           </div>
           {/* Right side - About text */}
-          < div className="ml-10" >
-            <h2 className="mb-8 font-serif text-5xl leading-tight text-white md:text-5xl">
+          <div className="md:ml-10">
+            <h2 className="mb-8 font-serif text-4xl md:text-5xl leading-tight text-white">
               Web{' '}
               <span className="text-[#c4ff00]">Development</span>
             </h2>
@@ -112,10 +112,10 @@ const ServicesSection = () => {
         </div>
 
         {/* Service grid */}
-        <div className="relative flex mb-20">
+        <div className="relative flex flex-col md:flex-row mb-20 gap-10 md:gap-0">
           {/* Left side - About text */}
-          <div className="ml-2 mr-12">
-            <h2 className="mb-8 font-serif text-5xl leading-tight text-white md:text-5xl">
+          <div className="md:ml-2 md:mr-12">
+            <h2 className="mb-8 font-serif text-4xl md:text-5xl leading-tight text-white">
               AI{' '}
               <span className="text-[#c4ff00]">Automation</span>
             </h2>

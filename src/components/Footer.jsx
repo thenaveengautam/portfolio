@@ -10,13 +10,12 @@ const Footer = () => {
         <div className="grid gap-8 mb-8 md:grid-cols-3">
           {/* Brand */}
           <div>
-            <button
-              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-              className="text-xl font-semibold text-white transition-opacity duration-300 cursor-pointer textfont-medium ftracking-wider hover:opacity-100"
+            <div
+              className="text-xl font-semibold text-white transition-opacity duration-300 font-medium tracking-wider hover:opacity-100 cursor-default"
             >
-              <span className="text-2xl font-black text-white">Naveen</span>
+              <span className="text-xl font-black text-white">Naveen</span>
               <span className="inline-block w-2 h-2 rounded-full bg-[#c4ff00] ml-1"></span>
-            </button>
+            </div>
             <p className="pt-2 text-sm leading-relaxed text-gray-400">
               Crafting smart solutions that matter.<br />Let's create something amazing<br />together.
             </p>

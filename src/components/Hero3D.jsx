@@ -91,31 +91,40 @@ const Hero3D = () => {
       {/* Content */}
       <div className={`relative z-10 flex flex-col items-center justify-center text-center px-6 max-w-5xl transition-all duration-1000 transform ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
         }`}>
-        
-        {/* Available for work badge */}
-        <div className="mb-10 md:mb-12">
-          <p className="text-[#c4ff00] text-sm font-medium tracking-wider flex items-center justify-center gap-2 px-4 py-2">
-            <span className="w-2 h-2 bg-[#c4ff00] rounded-full animate-pulse"></span>
-            AVAILABLE FOR WORK
-          </p>
-        </div>
 
-        {/* Main heading with 3D depth */}
-        <h1 className="mb-12 md:mb-16 font-serif text-4xl md:text-8xl lg:text-9xl leading-tight"
-          style={{
-            transform: `perspective(1000px) rotateX(${mousePosition.y * 0}deg) rotateY(${mousePosition.x * 0}deg)`,
-            textShadow: '0 10px 30px rgba(0, 0, 0, 0.5)'
-          }}
-        >
-          <span className="block text-white ">SOFTWARE </span>
-          <span className="text-[#c4ff00] block mt-1 md:mt-2"
+        {/* Top Content Group - Shifted Upwards */}
+        <div className="-translate-y-6 md:-translate-y-10 flex flex-col items-center w-full">
+          {/* Available for work badge */}
+          <div className="mb-6 md:mb-8 mt-8">
+            <p className="text-[#c4ff00] text-md font-medium tracking-wider flex items-center justify-center gap-2 px-4 py-2">
+              <span className="w-2 h-2 bg-[#c4ff00] rounded-full animate-pulse"></span>
+              AVAILABLE FOR WORK
+            </p>
+          </div>
+
+          {/* Main heading with 3D depth */}
+          <div 
+            className="mb-2 md:mb-8 transition-transform duration-200 ease-out"
             style={{
-              textShadow: '0 0 40px rgba(196, 255, 0, 0.4), 0 10px 30px rgba(0, 0, 0, 0.5)'
+              transform: `perspective(1000px) rotateX(${mousePosition.y * 0}deg) rotateY(${mousePosition.x * 0}deg)`,
             }}
           >
-            ENGINEER
-          </span>
-        </h1>
+            <h1 className="font-serif text-5xl md:text-8xl lg:text-[9rem] leading-[1.1] whitespace-nowrap tracking-tight flex items-center justify-center gap-3 md:gap-6 drop-shadow-[0_20px_30px_rgba(0,0,0,0.8)]">
+              <span className="text-transparent bg-clip-text bg-gradient-to-br from-white via-gray-100 to-gray-400">
+                Naveen
+              </span>
+              <span className="text-[#c4ff00]">
+                Gautam
+              </span>
+            </h1>
+          </div>
+
+          {/* Subtitle pulled close to the heading */}
+          <p className="mb-10 md:mb-12 max-w-2xl mx-auto text-white/70 text-base md:text-2xl font-light leading-relaxed px-4"
+            style={{ textShadow: '0 4px 15px rgba(0,0,0,1)' }}>
+            Hi there! I'm a Software Engineer crafting innovative web and automation solutions that drive <span className="font-medium text-white">real results</span>.
+          </p>
+        </div>
 
         {/* CTA Button with 3D effect */}
         <div className="flex justify-center">

@@ -95,8 +95,8 @@ const Hero3D = () => {
         {/* Top Content Group - Shifted Upwards */}
         <div className="flex flex-col items-center w-full -translate-y-6 md:-translate-y-10 -mt-8 md:-mt-20">
           {/* Available for work badge */}
-          <div className="mt-28 mb-6 md:mb-8">
-            <p className="text-[#c4ff00] text-md font-medium tracking-wider flex items-center justify-center gap-2 px-4 py-2">
+          <div className="mt-16 md:mt-28 mb-5 md:mb-8">
+            <p className="text-[#c4ff00] text-base md:text-md font-medium tracking-wider flex items-center justify-center gap-2 px-4 py-2">
               <span className="w-2 h-2 bg-[#c4ff00] rounded-full animate-pulse"></span>
               AVAILABLE FOR WORK
             </p>
@@ -104,12 +104,12 @@ const Hero3D = () => {
 
           {/* Main heading with 3D depth */}
           <div
-            className="mb-2 transition-transform duration-200 ease-out md:mb-8"
+            className="mb-4 md:mb-8 transition-transform duration-200 ease-out"
             style={{
               transform: `perspective(1000px) rotateX(${mousePosition.y * 0}deg) rotateY(${mousePosition.x * 0}deg)`,
             }}
           >
-            <h1 className="font-serif text-5xl md:text-8xl lg:text-[9rem] leading-[1.1] whitespace-nowrap tracking-tight flex items-center justify-center gap-3 md:gap-6 drop-shadow-[0_20px_30px_rgba(0,0,0,0.8)]">
+            <h1 className="font-serif text-[3.2rem] xs:text-6xl md:text-8xl lg:text-[9rem] leading-[1.1] whitespace-nowrap tracking-tight flex items-center justify-center gap-2 md:gap-6 drop-shadow-[0_20px_30px_rgba(0,0,0,0.8)]">
               <span className="text-transparent bg-clip-text bg-gradient-to-br from-white via-gray-100 to-gray-400">
                 Naveen
               </span>
@@ -120,14 +120,14 @@ const Hero3D = () => {
           </div>
 
           {/* Subtitle pulled close to the heading */}
-          <p className="max-w-2xl px-4 mx-auto mb-10 text-base font-normal leading-relaxed md:mb-20 text-white/70 md:text-2xl"
+          <p className="max-w-2xl px-4 mx-auto mb-10 md:mb-20 text-lg md:text-2xl font-normal leading-relaxed text-white/80 md:text-white/70"
             style={{ textShadow: '0 4px 15px rgba(0,0,0,1)' }}>
             Hi there! I'm a Software Engineer crafting innovative robust web and automation solutions that drive undeniably <span className="font-medium text-white">real results</span>.
           </p>
         </div>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col items-center justify-center w-full gap-4 mt-4 sm:flex-row sm:gap-6 -mt-8 md:-mt-14">
+        <div className="flex flex-col items-center justify-center w-full gap-4 mt-2 sm:flex-row sm:gap-6 md:-mt-14">
           {/* Secondary CTA (Resume) - Now on Left */}
           <a
             href="/resume.pdf"

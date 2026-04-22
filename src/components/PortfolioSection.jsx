@@ -50,11 +50,11 @@ const PortfolioSection = () => {
                   <p className="mb-4 text-sm leading-relaxed text-gray-400">{project.description}</p>
 
                   {/* Tags */}
-                  <div className="flex flex-wrap gap-2 mb-4">
+                  <div className="flex flex-wrap gap-1.5 mb-4">
                     {project.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="px-3 py-1 text-xs text-gray-400 border rounded-full bg-white/5 border-white/10"
+                        className="px-2 py-0.5 text-[10px] text-gray-400 border rounded-full bg-white/5 border-white/10"
                       >
                         {tag}
                       </span>

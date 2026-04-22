@@ -255,10 +255,10 @@ const AboutSection = () => {
                     }`}></div>
 
                   <div className="pb-6 md:pb-8">
-                    <span className="text-[#c4ff00] text-sm md:text-sm font-medium">{exp.year}</span>
-                    <h4 className="mt-2 text-base md:text-xl font-semibold text-white">{exp.role}</h4>
+                    <span className="text-[#c4ff00] text-base md:text-sm font-medium">{exp.year}</span>
+                    <h4 className="mt-2 text-lg md:text-xl font-semibold text-white">{exp.role}</h4>
                     <p className="mt-1 md:mt-2 mb-1 md:mb-2 text-sm md:text-sm text-gray-400">{exp.company}</p>
-                    <p className="leading-relaxed text-gray-200 text-sm md:text-base">{exp.description}</p>
+                    <p className="leading-relaxed text-gray-200 text-base md:text-base">{exp.description}</p>
                   </div>
                 </div>
               ))}

@@ -93,9 +93,9 @@ const Hero3D = () => {
         }`}>
 
         {/* Top Content Group - Shifted Upwards */}
-        <div className="flex flex-col items-center w-full -translate-y-6 md:-translate-y-10 -mt-8 md:-mt-20">
+        <div className="flex flex-col items-center w-full -translate-y-10 md:-translate-y-10 -mt-16 md:-mt-20">
           {/* Available for work badge */}
-          <div className="mt-0 md:mt-28 mb-12 md:mb-8">
+          <div className="mt-0 md:mt-28 mb-16 md:mb-8">
             <p className="text-[#c4ff00] text-base md:text-md font-medium tracking-wider flex items-center justify-center gap-2 px-4 py-2">
               <span className="w-2 h-2 bg-[#c4ff00] rounded-full animate-pulse"></span>
               AVAILABLE FOR WORK
@@ -109,7 +109,7 @@ const Hero3D = () => {
               transform: `perspective(1000px) rotateX(${mousePosition.y * 0}deg) rotateY(${mousePosition.x * 0}deg)`,
             }}
           >
-            <h1 className="font-serif text-[3.2rem] xs:text-6xl md:text-8xl lg:text-[9rem] leading-[1.1] whitespace-nowrap tracking-tight flex items-center justify-center gap-2 md:gap-6 drop-shadow-[0_20px_30px_rgba(0,0,0,0.8)]">
+            <h1 className="font-serif text-[12.5vw] sm:text-6xl md:text-8xl lg:text-[9rem] leading-[1.1] whitespace-nowrap tracking-tight flex items-center justify-center gap-2 md:gap-6 drop-shadow-[0_20px_30px_rgba(0,0,0,0.8)]">
               <span className="text-transparent bg-clip-text bg-gradient-to-br from-white via-gray-100 to-gray-400">
                 Naveen
               </span>
@@ -120,7 +120,7 @@ const Hero3D = () => {
           </div>
 
           {/* Subtitle pulled close to the heading */}
-          <p className="max-w-2xl px-4 mx-auto mb-10 md:mb-20 text-xl md:text-2xl font-normal leading-relaxed text-white/90 md:text-white/70"
+          <p className="max-w-2xl px-4 mx-auto mb-10 md:mb-20 text-xl md:text-2xl font-normal leading-relaxed text-white/70"
             style={{ textShadow: '0 4px 15px rgba(0,0,0,1)' }}>
             Hi there! I'm a Software Engineer crafting innovative robust web and automation solutions that drive undeniably <span className="font-medium text-white">real results</span>.
           </p>

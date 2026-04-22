@@ -148,12 +148,12 @@ const AboutSection = () => {
             {/* Technical Expertise */}
             <div className="space-y-8">
               <div>
-                <h4 className="text-[#c4ff00] text-sm font-medium mb-4 tracking-wider">Frontend</h4>
-                <div className="flex flex-wrap gap-3">
+                <h4 className="text-[#c4ff00] text-xs md:text-sm font-medium mb-3 md:mb-4 tracking-wider">Frontend</h4>
+                <div className="flex flex-wrap gap-2 md:gap-3">
                   {mockData.about.technical.frontend.map((tech) => (
                     <span
                       key={tech}
-                      className="px-4 py-2 bg-white/5 rounded-full text-white text-sm border border-white/10 hover:border-[#c4ff00]/70 transition-all duration-300"
+                      className="px-3 py-1.5 md:px-4 md:py-2 bg-white/5 rounded-full text-white text-[11px] md:text-sm border border-white/10 hover:border-[#c4ff00]/70 transition-all duration-300"
                     >
                       {tech}
                     </span>
@@ -162,12 +162,12 @@ const AboutSection = () => {
               </div>
 
               <div>
-                <h4 className="text-[#c4ff00] text-sm font-medium mb-4 tracking-wider">Backend</h4>
-                <div className="flex flex-wrap gap-3">
+                <h4 className="text-[#c4ff00] text-xs md:text-sm font-medium mb-3 md:mb-4 tracking-wider">Backend</h4>
+                <div className="flex flex-wrap gap-2 md:gap-3">
                   {mockData.about.technical.backend.map((tech) => (
                     <span
                       key={tech}
-                      className="px-4 py-2 bg-white/5 rounded-full text-white text-sm border border-white/10 hover:border-[#c4ff00]/70 transition-all duration-300"
+                      className="px-3 py-1.5 md:px-4 md:py-2 bg-white/5 rounded-full text-white text-[11px] md:text-sm border border-white/10 hover:border-[#c4ff00]/70 transition-all duration-300"
                     >
                       {tech}
                     </span>
@@ -176,12 +176,12 @@ const AboutSection = () => {
               </div>
 
               <div>
-                <h4 className="text-[#c4ff00] text-sm font-medium mb-4 tracking-wider">Database</h4>
-                <div className="flex flex-wrap gap-3">
+                <h4 className="text-[#c4ff00] text-xs md:text-sm font-medium mb-3 md:mb-4 tracking-wider">Database</h4>
+                <div className="flex flex-wrap gap-2 md:gap-3">
                   {mockData.about.technical.database.map((tech) => (
                     <span
                       key={tech}
-                      className="px-4 py-2 bg-white/5 rounded-full text-white text-sm border border-white/10 hover:border-[#c4ff00]/70 transition-all duration-300"
+                      className="px-3 py-1.5 md:px-4 md:py-2 bg-white/5 rounded-full text-white text-[11px] md:text-sm border border-white/10 hover:border-[#c4ff00]/70 transition-all duration-300"
                     >
                       {tech}
                     </span>
@@ -190,12 +190,12 @@ const AboutSection = () => {
               </div>
 
               <div>
-                <h4 className="text-[#c4ff00] text-sm font-medium mb-4 tracking-wider">Tools</h4>
-                <div className="flex flex-wrap gap-3">
+                <h4 className="text-[#c4ff00] text-xs md:text-sm font-medium mb-3 md:mb-4 tracking-wider">Tools</h4>
+                <div className="flex flex-wrap gap-2 md:gap-3">
                   {mockData.about.technical.tools.map((tech) => (
                     <span
                       key={tech}
-                      className="px-4 py-2 bg-white/5 rounded-full text-white text-sm border border-white/10 hover:border-[#c4ff00]/70 transition-all duration-300"
+                      className="px-3 py-1.5 md:px-4 md:py-2 bg-white/5 rounded-full text-white text-[11px] md:text-sm border border-white/10 hover:border-[#c4ff00]/70 transition-all duration-300"
                     >
                       {tech}
                     </span>
@@ -204,12 +204,12 @@ const AboutSection = () => {
               </div>
 
               <div>
-                <h4 className="text-[#c4ff00] text-sm font-medium mb-4 tracking-wider">Cloud & Services</h4>
-                <div className="flex flex-wrap gap-3">
+                <h4 className="text-[#c4ff00] text-xs md:text-sm font-medium mb-3 md:mb-4 tracking-wider">Cloud & Services</h4>
+                <div className="flex flex-wrap gap-2 md:gap-3">
                   {mockData.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="px-4 py-2 bg-white/5 rounded-full text-white text-sm border border-white/10 hover:border-[#c4ff00]/70 transition-all duration-300"
+                      className="px-3 py-1.5 md:px-4 md:py-2 bg-white/5 rounded-full text-white text-[11px] md:text-sm border border-white/10 hover:border-[#c4ff00]/70 transition-all duration-300"
                     >
                       {tech}
                     </span>
@@ -218,12 +218,12 @@ const AboutSection = () => {
               </div>
 
               <div>
-                <h4 className="text-[#c4ff00] text-sm font-medium mb-4 tracking-wider">Automation</h4>
-                <div className="flex flex-wrap gap-3">
+                <h4 className="text-[#c4ff00] text-xs md:text-sm font-medium mb-3 md:mb-4 tracking-wider">Automation</h4>
+                <div className="flex flex-wrap gap-2 md:gap-3">
                   {mockData.about.technical.automation.map((tech) => (
                     <span
                       key={tech}
-                      className="px-4 py-2 bg-white/5 rounded-full text-white text-sm border border-white/10 hover:border-[#c4ff00]/70 transition-all duration-300"
+                      className="px-3 py-1.5 md:px-4 md:py-2 bg-white/5 rounded-full text-white text-[11px] md:text-sm border border-white/10 hover:border-[#c4ff00]/70 transition-all duration-300"
                     >
                       {tech}
                     </span>

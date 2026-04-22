@@ -95,7 +95,7 @@ const Hero3D = () => {
         {/* Top Content Group - Shifted Upwards */}
         <div className="flex flex-col items-center w-full -translate-y-10 md:-translate-y-10 -mt-8 md:-mt-20">
           {/* Available for work badge */}
-          <div className="mt-0 md:mt-28 mb-16 md:mb-8">
+          <div className="mt-0 md:mt-28 mb-16 md:mb-4">
             <p className="text-[#c4ff00] text-base md:text-md font-medium tracking-wider flex items-center justify-center gap-2 px-4 py-2">
               <span className="w-2 h-2 bg-[#c4ff00] rounded-full animate-pulse"></span>
               AVAILABLE FOR WORK

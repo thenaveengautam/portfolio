@@ -6,7 +6,7 @@ import { ExternalLink } from 'lucide-react';
 
 const PortfolioSection = () => {
   return (
-    <section id="portfolio" className="min-h-screen bg-[#0a0a0a] py-12 md:py-20 px-6">
+    <section id="portfolio" className="min-h-screen bg-[#0a0a0a] py-12 md:py-20 px-6 pb-6">
       <div className="mx-auto max-w-7xl">
         {/* Section header */}
         <div className="flex flex-col items-start justify-between gap-4 mb-10 md:flex-row md:items-center md:mb-16 md:gap-0">

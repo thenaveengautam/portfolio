@@ -148,7 +148,7 @@ const AboutSection = () => {
             {/* Technical Expertise */}
             <div className="space-y-8">
               <div>
-                <h4 className="text-[#c4ff00] text-sm font-medium mb-4 tracking-wider">Frontend</h4>
+                <h4 className="text-[#c4ff00] text-base md:text-sm font-medium mb-4 tracking-wider">Frontend</h4>
                 <div className="flex flex-wrap gap-3">
                   {mockData.about.technical.frontend.map((tech) => (
                     <span
@@ -162,7 +162,7 @@ const AboutSection = () => {
               </div>
 
               <div>
-                <h4 className="text-[#c4ff00] text-sm font-medium mb-4 tracking-wider">Backend</h4>
+                <h4 className="text-[#c4ff00] text-base md:text-sm font-medium mb-4 tracking-wider">Backend</h4>
                 <div className="flex flex-wrap gap-3">
                   {mockData.about.technical.backend.map((tech) => (
                     <span
@@ -176,7 +176,7 @@ const AboutSection = () => {
               </div>
 
               <div>
-                <h4 className="text-[#c4ff00] text-sm font-medium mb-4 tracking-wider">Database</h4>
+                <h4 className="text-[#c4ff00] text-base md:text-sm font-medium mb-4 tracking-wider">Database</h4>
                 <div className="flex flex-wrap gap-3">
                   {mockData.about.technical.database.map((tech) => (
                     <span
@@ -190,7 +190,7 @@ const AboutSection = () => {
               </div>
 
               <div>
-                <h4 className="text-[#c4ff00] text-sm font-medium mb-4 tracking-wider">Tools</h4>
+                <h4 className="text-[#c4ff00] text-base md:text-sm font-medium mb-4 tracking-wider">Tools</h4>
                 <div className="flex flex-wrap gap-3">
                   {mockData.about.technical.tools.map((tech) => (
                     <span
@@ -204,7 +204,7 @@ const AboutSection = () => {
               </div>
 
               <div>
-                <h4 className="text-[#c4ff00] text-sm font-medium mb-4 tracking-wider">Cloud & Services</h4>
+                <h4 className="text-[#c4ff00] text-base md:text-sm font-medium mb-4 tracking-wider">Cloud & Services</h4>
                 <div className="flex flex-wrap gap-3">
                   {mockData.technologies.map((tech) => (
                     <span
@@ -218,7 +218,7 @@ const AboutSection = () => {
               </div>
 
               <div>
-                <h4 className="text-[#c4ff00] text-sm font-medium mb-4 tracking-wider">Automation</h4>
+                <h4 className="text-[#c4ff00] text-base md:text-sm font-medium mb-4 tracking-wider">Automation</h4>
                 <div className="flex flex-wrap gap-3">
                   {mockData.about.technical.automation.map((tech) => (
                     <span
@@ -255,9 +255,9 @@ const AboutSection = () => {
                     }`}></div>
 
                   <div className="pb-6 md:pb-8">
-                    <span className="text-[#c4ff00] text-xs md:text-sm font-medium">{exp.year}</span>
+                    <span className="text-[#c4ff00] text-sm md:text-sm font-medium">{exp.year}</span>
                     <h4 className="mt-2 text-base md:text-xl font-semibold text-white">{exp.role}</h4>
-                    <p className="mt-1 md:mt-2 mb-1 md:mb-2 text-xs md:text-sm text-gray-400">{exp.company}</p>
+                    <p className="mt-1 md:mt-2 mb-1 md:mb-2 text-sm md:text-sm text-gray-400">{exp.company}</p>
                     <p className="leading-relaxed text-gray-200 text-sm md:text-base">{exp.description}</p>
                   </div>
                 </div>

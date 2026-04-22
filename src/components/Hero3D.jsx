@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react';
 
 // Pre-generate stable particle data outside the component
 // Using deterministic values based on index to avoid SSR/client hydration mismatch
-const PARTICLES = Array.from({ length: 60 }).map((_, i) => ({
+const PARTICLES = Array.from({ length: 0 }).map((_, i) => ({
   left: `${(i * 137.508) % 100}%`,
   top: `${(i * 97.312) % 100}%`,
   duration: `${5 + (i * 0.7) % 1}s`,

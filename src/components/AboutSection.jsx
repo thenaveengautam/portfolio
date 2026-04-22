@@ -135,6 +135,16 @@ const AboutSection = () => {
               {mockData.about.description}
             </p>
 
+            {/* Image - only visible on mobile, placed before tech skills */}
+            <div className="relative mb-8 group md:hidden">
+              <img
+                src="/code_reality.png"
+                alt="Turning ideas into reality through code"
+                className="w-full transition-transform duration-500 transform rounded-2xl group-hover:scale-105 h-[250px] object-cover object-center"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/1 to-transparent rounded-2xl"></div>
+            </div>
+
             {/* Technical Expertise */}
             <div className="space-y-8">
               <div>
@@ -225,7 +235,8 @@ const AboutSection = () => {
 
           {/* Right side - Experience Timeline */}
           <div>
-            <div className="relative mb-12 group">
+            {/* Image - only visible on desktop, hidden on mobile */}
+            <div className="relative mb-12 group hidden md:block">
               <img
                 src="/code_reality.png"
                 alt="Turning ideas into reality through code"
@@ -243,11 +254,11 @@ const AboutSection = () => {
                     : 'bg-gray-700 border-gray-600'
                     }`}></div>
 
-                  <div className="pb-8">
-                    <span className="text-[#c4ff00] text-sm font-medium">{exp.year}</span>
-                    <h4 className="mt-2 text-xl font-semibold text-white">{exp.role}</h4>
-                    <p className="mt-2 mb-2 text-sm text-gray-400">{exp.company}</p>
-                    <p className="leading-relaxed text-gray-200">{exp.description}</p>
+                  <div className="pb-6 md:pb-8">
+                    <span className="text-[#c4ff00] text-xs md:text-sm font-medium">{exp.year}</span>
+                    <h4 className="mt-2 text-base md:text-xl font-semibold text-white">{exp.role}</h4>
+                    <p className="mt-1 md:mt-2 mb-1 md:mb-2 text-xs md:text-sm text-gray-400">{exp.company}</p>
+                    <p className="leading-relaxed text-gray-200 text-sm md:text-base">{exp.description}</p>
                   </div>
                 </div>
               ))}

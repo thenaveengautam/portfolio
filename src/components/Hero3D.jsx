@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, FileText } from 'lucide-react';
 
 // Pre-generate stable particle data outside the component
 // Using deterministic values based on index to avoid SSR/client hydration mismatch
@@ -93,9 +93,9 @@ const Hero3D = () => {
         }`}>
 
         {/* Top Content Group - Shifted Upwards */}
-        <div className="-translate-y-6 md:-translate-y-10 flex flex-col items-center w-full">
+        <div className="flex flex-col items-center w-full -translate-y-6 md:-translate-y-10 -mt-8 md:-mt-20">
           {/* Available for work badge */}
-          <div className="mb-6 md:mb-8 mt-8">
+          <div className="mt-28 mb-6 md:mb-8">
             <p className="text-[#c4ff00] text-md font-medium tracking-wider flex items-center justify-center gap-2 px-4 py-2">
               <span className="w-2 h-2 bg-[#c4ff00] rounded-full animate-pulse"></span>
               AVAILABLE FOR WORK
@@ -103,8 +103,8 @@ const Hero3D = () => {
           </div>
 
           {/* Main heading with 3D depth */}
-          <div 
-            className="mb-2 md:mb-8 transition-transform duration-200 ease-out"
+          <div
+            className="mb-2 transition-transform duration-200 ease-out md:mb-8"
             style={{
               transform: `perspective(1000px) rotateX(${mousePosition.y * 0}deg) rotateY(${mousePosition.x * 0}deg)`,
             }}
@@ -120,14 +120,35 @@ const Hero3D = () => {
           </div>
 
           {/* Subtitle pulled close to the heading */}
-          <p className="mb-10 md:mb-12 max-w-2xl mx-auto text-white/70 text-base md:text-2xl font-light leading-relaxed px-4"
+          <p className="max-w-2xl px-4 mx-auto mb-10 text-base font-normal leading-relaxed md:mb-20 text-white/70 md:text-2xl"
             style={{ textShadow: '0 4px 15px rgba(0,0,0,1)' }}>
-            Hi there! I'm a Software Engineer crafting innovative web and automation solutions that drive <span className="font-medium text-white">real results</span>.
+            Hi there! I'm a Software Engineer crafting innovative robust web and automation solutions that drive undeniably <span className="font-medium text-white">real results</span>.
           </p>
         </div>
 
-        {/* CTA Button with 3D effect */}
-        <div className="flex justify-center">
+        {/* CTA Buttons */}
+        <div className="flex flex-col items-center justify-center w-full gap-4 mt-4 sm:flex-row sm:gap-6 -mt-8 md:-mt-14">
+          {/* Secondary CTA (Resume) - Now on Left */}
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative flex justify-center w-full px-8 py-3 overflow-hidden font-medium text-white transition-all duration-300 border rounded-full cursor-pointer group bg-white/5 backdrop-blur-md border-white/10 sm:w-auto"
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-4px)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0)';
+            }}
+          >
+            <span className="relative z-10 flex items-center gap-3">
+              <FileText size={20} className="text-gray-300 transition-colors duration-300" />
+              <span className="font-semibold text-lg group-hover:text-[#c4ff00]">Resume</span>
+            </span>
+            <span className="absolute inset-0 transition-transform duration-700 transform -translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent group-hover:translate-x-full"></span>
+          </a>
+
+          {/* Primary CTA (Start your Project) - Now on Right */}
           <button
             onClick={() => {
               const contactSection = document.getElementById('contact');
@@ -135,33 +156,18 @@ const Hero3D = () => {
                 contactSection.scrollIntoView({ behavior: 'smooth' });
               }
             }}
-            className="group relative px-7 py-4 bg-[#c4ff00] text-black rounded-full font-medium overflow-hidden cursor-pointer"
-            style={{
-              transform: 'translateZ(60px)',
-              boxShadow: '0 10px 40px rgba(196, 255, 0, 0.3)'
-            }}
+            className="group relative px-8 py-3 bg-[#c4ff00] text-black rounded-full font-semibold overflow-hidden cursor-pointer transition-all duration-300 w-full sm:w-auto flex justify-center"
             onMouseEnter={(e) => {
-              e.currentTarget.style.transform = 'translateZ(80px) scale(1.05)';
+              e.currentTarget.style.transform = 'translateY(-4px)';
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.transform = 'translateZ(60px) scale(1)';
+              e.currentTarget.style.transform = 'translateY(0)';
             }}
           >
             <span className="relative z-10 flex items-center gap-3">
-              <span className="flex items-center justify-center w-6 h-6 bg-black rounded-md">
-                <span className="grid grid-cols-2 gap-0.5">
-                  <span className="w-1 h-1 bg-[#c4ff00] rounded-sm"></span>
-                  <span className="w-1 h-1 bg-[#c4ff00] rounded-sm"></span>
-                  <span className="w-1 h-1 bg-[#c4ff00] rounded-sm"></span>
-                  <span className="w-1 h-1 bg-[#c4ff00] rounded-sm"></span>
-                </span>
-              </span>
-              <span>Start your Project</span>
+              <span className="text-lg font-semibold">Start your Project</span>
               <ArrowRight className="transition-transform duration-300 group-hover:translate-x-4" size={20} />
             </span>
-
-            {/* Animated background */}
-            <span className="absolute inset-0 bg-gradient-to-r from-[#d4ff20] to-[#c4ff00] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
           </button>
         </div>
       </div>

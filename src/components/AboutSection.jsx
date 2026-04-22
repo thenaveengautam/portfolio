@@ -153,7 +153,7 @@ const AboutSection = () => {
                   {mockData.about.technical.frontend.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1.5 md:px-4 md:py-2 bg-white/5 rounded-full text-white text-[11px] md:text-sm border border-white/10 hover:border-[#c4ff00]/70 transition-all duration-300"
+                      className="px-3 py-1.5 md:px-4 md:py-2 bg-white/5 rounded-full text-white text-xs md:text-sm border border-white/10 hover:border-[#c4ff00]/70 transition-all duration-300"
                     >
                       {tech}
                     </span>
@@ -167,7 +167,7 @@ const AboutSection = () => {
                   {mockData.about.technical.backend.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1.5 md:px-4 md:py-2 bg-white/5 rounded-full text-white text-[11px] md:text-sm border border-white/10 hover:border-[#c4ff00]/70 transition-all duration-300"
+                      className="px-3 py-1.5 md:px-4 md:py-2 bg-white/5 rounded-full text-white text-xs md:text-sm border border-white/10 hover:border-[#c4ff00]/70 transition-all duration-300"
                     >
                       {tech}
                     </span>
@@ -181,7 +181,7 @@ const AboutSection = () => {
                   {mockData.about.technical.database.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1.5 md:px-4 md:py-2 bg-white/5 rounded-full text-white text-[11px] md:text-sm border border-white/10 hover:border-[#c4ff00]/70 transition-all duration-300"
+                      className="px-3 py-1.5 md:px-4 md:py-2 bg-white/5 rounded-full text-white text-xs md:text-sm border border-white/10 hover:border-[#c4ff00]/70 transition-all duration-300"
                     >
                       {tech}
                     </span>
@@ -195,7 +195,7 @@ const AboutSection = () => {
                   {mockData.about.technical.tools.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1.5 md:px-4 md:py-2 bg-white/5 rounded-full text-white text-[11px] md:text-sm border border-white/10 hover:border-[#c4ff00]/70 transition-all duration-300"
+                      className="px-3 py-1.5 md:px-4 md:py-2 bg-white/5 rounded-full text-white text-xs md:text-sm border border-white/10 hover:border-[#c4ff00]/70 transition-all duration-300"
                     >
                       {tech}
                     </span>
@@ -209,7 +209,7 @@ const AboutSection = () => {
                   {mockData.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1.5 md:px-4 md:py-2 bg-white/5 rounded-full text-white text-[11px] md:text-sm border border-white/10 hover:border-[#c4ff00]/70 transition-all duration-300"
+                      className="px-3 py-1.5 md:px-4 md:py-2 bg-white/5 rounded-full text-white text-xs md:text-sm border border-white/10 hover:border-[#c4ff00]/70 transition-all duration-300"
                     >
                       {tech}
                     </span>
@@ -223,7 +223,7 @@ const AboutSection = () => {
                   {mockData.about.technical.automation.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1.5 md:px-4 md:py-2 bg-white/5 rounded-full text-white text-[11px] md:text-sm border border-white/10 hover:border-[#c4ff00]/70 transition-all duration-300"
+                      className="px-3 py-1.5 md:px-4 md:py-2 bg-white/5 rounded-full text-white text-xs md:text-sm border border-white/10 hover:border-[#c4ff00]/70 transition-all duration-300"
                     >
                       {tech}
                     </span>
@@ -255,7 +255,7 @@ const AboutSection = () => {
                     }`}></div>
 
                   <div className="pb-6 md:pb-8">
-                    <span className="text-[#c4ff00] text-xs md:text-sm font-medium">{exp.year}</span>
+                    <span className="text-[#c4ff00] text-sm font-medium">{exp.year}</span>
                     <h4 className="mt-2 text-base md:text-xl font-semibold text-white">{exp.role}</h4>
                     <p className="mt-1 md:mt-2 mb-1 md:mb-2 text-xs md:text-sm text-gray-400">{exp.company}</p>
                     <p className="leading-relaxed text-gray-200 text-sm md:text-base">{exp.description}</p>

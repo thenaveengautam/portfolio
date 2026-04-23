@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 100">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4ff33"/>
+      <stop offset="100%" stop-color="#8bb800"/>
+    </linearGradient>
+  </defs>
+
+  <g stroke="url(#g)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Left bracket < — far left -->
+    <polyline points="42,20 15,50 42,80"/>
+
+    <!-- Slash / — centered with big gap on both sides -->
+    <line x1="90" y1="14" x2="70" y2="86"/>
+
+    <!-- Right bracket > — far right -->
+    <polyline points="118,20 145,50 118,80"/>
+  </g>
+</svg>

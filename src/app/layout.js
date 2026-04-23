@@ -1,8 +1,13 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'Portfolio',
-  description: 'Web Developer Portfolio',
+  title: 'Naveen Gautam | Software Engineer',
+  description: 'Software Engineer Portfolio',
+  icons: {
+    icon: [
+      { url: '/icon.svg', type: 'image/svg+xml' },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {

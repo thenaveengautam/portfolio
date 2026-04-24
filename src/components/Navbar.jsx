@@ -71,14 +71,24 @@ const Navbar = () => {
       }`}>
       <div className="px-4 md:px-6 py-4 mx-auto font-semibold max-w-7xl w-full">
         <div className="flex items-center justify-between w-full">
-          {/* Logo */}
-          <button
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="text-xl font-semibold text-white transition-opacity duration-300 cursor-pointer textfont-medium ftracking-wider hover:opacity-100"
-          >
-            <span className="ml-2 text-2xl font-black text-white">Naveen</span>
-            <span className="inline-block w-2 h-2 rounded-full bg-[#c4ff00] ml-1"></span>
-          </button>
+          {/* Logo and Mobile Badge Container */}
+          <div className="flex items-center">
+            {/* Logo */}
+            <button
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              className="text-xl font-semibold text-white transition-opacity duration-300 cursor-pointer textfont-medium ftracking-wider hover:opacity-100 flex items-center"
+            >
+              <span className="ml-2 text-2xl font-black text-white">Naveen</span>
+              <span className="inline-block w-2 h-2 rounded-full bg-[#c4ff00] ml-1"></span>
+            </button>
+            
+            {/* Mobile Available for Work Badge */}
+            <div className="flex md:hidden items-center ml-2 mt-0.5">
+              <span className="text-[#c4ff00] text-[10px] sm:text-[11px] font-bold tracking-widest whitespace-nowrap">
+                AVAILABLE FOR WORK
+              </span>
+            </div>
+          </div>
 
           {/* Desktop Navigation */}
           <div className="items-center hidden gap-8 md:flex">

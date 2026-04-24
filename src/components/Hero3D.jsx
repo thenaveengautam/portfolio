@@ -37,7 +37,7 @@ const Hero3D = () => {
   }, []);
 
   return (
-    <section className="relative min-h-[75vh] md:min-h-screen flex flex-col items-center justify-center overflow-hidden bg-[#0a0a0a] pt-24 md:pt-0 md:pb-0">
+    <section className="relative min-h-[75vh] md:min-h-screen flex items-center justify-center overflow-hidden bg-[#0a0a0a] pt-24 md:pt-0 md:pb-0">
       {/* Animated Grid Background */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute inset-0" style={{
@@ -88,22 +88,14 @@ const Hero3D = () => {
         </p>
       </div>
 
-      {/* Mobile Badge Container - Perfectly centers badge between navbar and heading */}
-      <div className={`flex-1 w-full flex items-center justify-center md:hidden z-10 transition-all duration-1000 transform ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-        <p className="text-[#c4ff00] text-sm font-medium tracking-wider flex items-center justify-center gap-2 px-4 py-2 mt-8">
-          <span className="w-2 h-2 bg-[#c4ff00] rounded-full animate-pulse"></span>
-          AVAILABLE FOR WORK
-        </p>
-      </div>
-
       {/* Content */}
       <div className={`relative z-10 flex flex-col items-center justify-center text-center px-6 max-w-5xl transition-all duration-1000 transform ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
         }`}>
 
         {/* Top Content Group - Shifted Upwards */}
-        <div className="flex flex-col items-center w-full md:-translate-y-10 md:-mt-20">
-          {/* Desktop Available for work badge */}
-          <div className="hidden md:block mt-0 md:mt-28 mb-16 md:mb-4">
+        <div className="flex flex-col items-center w-full -translate-y-10 md:-translate-y-10 -mt-8 md:-mt-20">
+          {/* Available for work badge */}
+          <div className="hidden md:block md:mt-28 md:mb-4">
             <p className="text-[#c4ff00] text-base md:text-md font-medium tracking-wider flex items-center justify-center gap-2 px-4 py-2">
               <span className="w-2 h-2 bg-[#c4ff00] rounded-full animate-pulse"></span>
               AVAILABLE FOR WORK
@@ -179,9 +171,6 @@ const Hero3D = () => {
           </button>
         </div>
       </div>
-
-      {/* Bottom Spacer for Mobile to balance the flex column */}
-      <div className="flex-1 w-full md:hidden"></div>
     </section>
   );
 };

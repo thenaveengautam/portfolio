@@ -37,7 +37,7 @@ const Hero3D = () => {
   }, []);
 
   return (
-    <section className="relative min-h-[75vh] md:min-h-screen flex items-center justify-center overflow-hidden bg-[#0a0a0a] pt-24 md:pt-0 md:pb-0">
+    <section className="hero-section relative min-h-[100svh] md:min-h-screen flex items-center justify-center overflow-hidden bg-[#0a0a0a] pt-16 pb-8 md:pt-0 md:pb-0">
       {/* Animated Grid Background */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute inset-0" style={{
@@ -93,18 +93,18 @@ const Hero3D = () => {
         }`}>
 
         {/* Top Content Group - Shifted Upwards */}
-        <div className="flex flex-col items-center w-full -translate-y-10 md:-translate-y-10 -mt-8 md:-mt-20">
+        <div className="flex flex-col items-center w-full translate-y-0 mt-0 md:-translate-y-10 md:-mt-20">
           {/* Available for work badge */}
-          <div className="mt-0 md:mt-28 mb-16 md:mb-4">
-            <p className="text-[#c4ff00] text-base md:text-md font-medium tracking-wider flex items-center justify-center gap-2 px-4 py-2">
-              <span className="w-2 h-2 bg-[#c4ff00] rounded-full animate-pulse"></span>
+          <div className="mt-4 mb-6 md:mt-28 md:mb-4 shrink-0">
+            <p className="text-[#c4ff00] text-base md:text-md font-medium tracking-wider flex items-center justify-center gap-2 px-4 py-2 whitespace-nowrap">
+              <span className="w-2 h-2 bg-[#c4ff00] rounded-full animate-pulse shrink-0"></span>
               AVAILABLE FOR WORK
             </p>
           </div>
 
           {/* Main heading with 3D depth */}
           <div
-            className="mb-4 md:mb-8 transition-transform duration-200 ease-out"
+            className="mb-4 md:mb-8 transition-transform duration-200 ease-out shrink-0"
             style={{
               transform: `perspective(1000px) rotateX(${mousePosition.y * 0}deg) rotateY(${mousePosition.x * 0}deg)`,
             }}
@@ -120,14 +120,14 @@ const Hero3D = () => {
           </div>
 
           {/* Subtitle pulled close to the heading */}
-          <p className="max-w-2xl px-4 mx-auto mb-10 md:mb-20 text-xl md:text-2xl font-normal leading-relaxed text-white/70"
+          <p className="max-w-2xl px-4 mx-auto mb-8 md:mb-20 text-xl md:text-2xl font-normal leading-relaxed text-white/70 shrink-0"
             style={{ textShadow: '0 4px 15px rgba(0,0,0,1)' }}>
             Hi there! I'm a Software Engineer crafting innovative robust web and automation solutions that drive undeniably <span className="font-medium text-white">real results</span>.
           </p>
         </div>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col items-center justify-center w-full gap-4 mt-2 sm:flex-row sm:gap-6 md:-mt-14">
+        <div className="flex flex-col items-center justify-center w-full gap-4 mt-0 sm:flex-row sm:gap-6 md:-mt-14 shrink-0">
           {/* Secondary CTA (Resume) - Now on Left */}
           <a
             href="/resume.pdf"

@@ -163,3 +163,16 @@ html {
 .animate-float-slow {
   animation: float-slow 8s ease-in-out infinite;
 }
+
+/* Mobile hero consistency - ensures same layout on all mobile devices */
+@media (max-width: 767px) {
+  .hero-section {
+    /* Use svh for modern browsers, fallback to vh */
+    min-height: 100vh;
+    min-height: 100svh;
+    /* Prevent content from being pushed by browser chrome */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

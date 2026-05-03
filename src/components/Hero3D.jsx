@@ -38,14 +38,6 @@ const Hero3D = () => {
 
   return (
     <section className="hero-section relative min-h-[75vh] md:min-h-screen flex items-start md:items-center justify-center overflow-hidden bg-[#0a0a0a] pt-24 pb-20 md:pt-0 md:pb-0">
-      {/* Animated Grid Background */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `linear-gradient(rgba(196, 255, 0, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(196, 255, 0, 0.1) 1px, transparent 1px)`,
-          backgroundSize: '50px 50px',
-          animation: 'grid-move 20s linear infinite'
-        }}></div>
-      </div>
 
       {/* Animated background */}
       <div className="absolute inset-0 opacity-30">

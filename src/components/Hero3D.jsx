@@ -37,7 +37,7 @@ const Hero3D = () => {
   }, []);
 
   return (
-    <section className="relative min-h-[100svh] md:min-h-screen flex items-center justify-start md:justify-center overflow-hidden bg-[#0a0a0a] pt-20 md:pt-0 md:pb-0">
+    <section className="relative min-h-[75vh] md:min-h-screen flex items-center justify-center overflow-hidden bg-[#0a0a0a] pt-24 md:pt-0 md:pb-0">
       {/* Animated Grid Background */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute inset-0" style={{
@@ -93,9 +93,9 @@ const Hero3D = () => {
         }`}>
 
         {/* Top Content Group - Shifted Upwards */}
-        <div className="flex flex-col items-center w-full translate-y-0 md:-translate-y-10 mt-0 md:-mt-20">
+        <div className="flex flex-col items-center w-full -translate-y-10 md:-translate-y-10 -mt-8 md:-mt-20">
           {/* Available for work badge */}
-          <div className="mt-0 md:mt-28 mb-6 md:mb-4">
+          <div className="mt-0 md:mt-28 mb-16 md:mb-4">
             <p className="text-[#c4ff00] text-base md:text-md font-medium tracking-wider flex items-center justify-center gap-2 px-4 py-2">
               <span className="w-2 h-2 bg-[#c4ff00] rounded-full animate-pulse"></span>
               AVAILABLE FOR WORK

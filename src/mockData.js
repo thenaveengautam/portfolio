@@ -160,7 +160,7 @@ portfolio: [
     url: "https://openchatai.app",
     image:
       "chatai.png",
-    tags: ["TypeScript", "React", "Node.js", "Express.js", "Tailwind CSS",],
+    tags: ["TypeScript", "React", "Node.js", "Express.js", "Tailwind CSS", "Shadcn UI"],
     description: "A modern AI-powered chat application built with Stream Chat, OpenAI, and web search capabilities. This full-stack application provides an intelligent writing assistant that can help with content creation, research, and real-time collaboration.",
   },
 ],

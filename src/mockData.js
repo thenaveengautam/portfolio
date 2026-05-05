@@ -145,13 +145,23 @@ export const mockData = {
 portfolio: [
   {
     id: 1,
-    title: "Nexcraft — AI Content Generator",
-    category: "Full Stack SaaS",
+    title: "Nexcraft - AI Content Generator",
+    category: "Full Stack SaaS App",
     url: "https://nexcraft.trynaveen.com",
     image:
       "nexcraft.png",
     tags: ["Next.js", "TypeScript", "API Routes", "REST API", "Webhooks", "NextAuth.js", "OAuth", "Mongoose", "MongoDB", "Stripe"],
     description: "A full-stack AI-powered SaaS platform that Craft Content that Glows for social media in seconds with the power of AI.",
+  },
+  {
+    id: 2,
+    title: "AI - Chat App",
+    category: "Full Stack Web App",
+    url: "https://openchatai.app",
+    image:
+      "chatai.png",
+    tags: ["TypeScript", "React", "Node.js", "Express.js", "Tailwind CSS",],
+    description: "A modern AI-powered chat application built with Stream Chat, OpenAI, and web search capabilities. This full-stack application provides an intelligent writing assistant that can help with content creation, research, and real-time collaboration.",
   },
 ],
 
